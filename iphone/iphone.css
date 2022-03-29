@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: #f5f5f7;
 }
 
 #nav {
@@ -35,12 +35,19 @@ nav {
 }
 
 nav+div {
-    display: flex;
-    justify-content: center;
+    height: 30px;
+    
+
 }
 
 nav+div>p {
-    color: #fbfbfd;
+    text-align: center;
+    color: #8a8a8c;
+    margin-top: 5px;
+}
+
+.logo{
+    height: 54px;
 }
 
 #first {
@@ -56,18 +63,120 @@ nav+div>p {
     background-color: #fbfbfd;
 }
 
+
+
+
+.first_img_2nd_div{
+ display: flex;
+ /* border: 1px solid blue; */
+ justify-content:center
+}
+
+.first_2nd_div>a{
+    text-decoration: none;
+}
+
+
+
+/* .first_img>button{
+
+    margin-left: 80px;
+} */
+
+.first_img>div:nth-child(1){
+    margin-top: 60px;
+
+}
+
+.first_img>div>h1{
+    font-size: 37px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.first_img>div>h1+h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.first_img>div>h1+p{
+    font-size: 25px;
+}
+
+.font{
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+                /* all button color blue a have some boder radius so only target button  */
+  button{
+      border-radius: 10px;
+      background-color: #0071e3;
+      font: 900;
+      color: #f5f5f7;
+      border: none;
+      
+  }
+
+  .second_img{
+      width: 100%;
+      /* border: 1px solid red; */
+      background-color: #ffffff;
+  }
+
+  .second_img>div:nth-child(1){
+      /* border: 1px solid blue; */
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      margin-top: 50px;
+      line-height: 40px;
+  }
+
+  .second_img>div>h3{
+      font-size: 25px;
+  }
+
+  .second_img>div>h1{
+      font-size: 50px;
+  }
+
+  .second_img_2nd_div{
+      display: flex;
+      justify-content: center;
+      /* border: 1px solid black; */
+      margin-bottom: 15px;
+      margin-top: 15px;
+  }
+
+
+
 .second{
     display: flex;
     justify-content: center;
     width: 100%;
     background-color: #fbfbfd;
+    /* border: 1px solid red; */
 }
 
 .second>div{
-    width: 40%;
+    width: 50%;
    padding-top: 50px;
    padding-left: 20px;
+   /* border: 1px solid blue; */
+   margin: 10px;
 }
+
+.second>div:nth-child(1){
+    
+    text-align: center;
+    /* margin-top: 50px;  */
+}
+
+
+
+
 
 #third{
     width: 50%;
@@ -85,3 +194,36 @@ nav+div>p {
     border-radius: 20px;
 
 }
+
+.four{
+    background-color: #fbfbfd;
+}
+.four>h1{
+    text-align: center;
+}
+
+.four>div{
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+
+.four>div>div{
+    width: 25%;
+    /* border: 1px solid green */
+    margin: 10px;
+}
+
+.sub_four{
+    display: block;
+    margin:auto;
+    text-align: center;
+
+}
+
+.sub{
+    width: 100%;
+}
+
+
