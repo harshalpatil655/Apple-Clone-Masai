@@ -48,7 +48,87 @@ div>img{
     width:140px;  
 }
 div>a{
-    color:blue;
+    color:#478fd9;
     text-decoration: none;
+}
+
+/* /////////////   Pro   //////////
+---------------------------------
+---------------------------------- */
+#pro{
+  
+  width:100%;
+  /* border:1px solid red */
+  background-color:#fbfbfd;
+}
+#iphone13>h1{
+    padding-top: 40px;
+      text-align: center;
+      font-size: 60px;
+}
+#ohsopro>p{
+    text-align: center;
+    font-size: 40px;
+}
+#iphone13link{
+    display:flex;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+#iphone13link>a{
+    margin-right: 50px;
+}
+#pro>#iphone13pic{
+    display: flex;
+    justify-content: center;
+       
+}
+#iphone13pic>img{
+    width:60%
+}
+.empty{
+    height:10px;
+    border:1px solid red
+    
+}
+/* #iphonese1{
+    display: flex;
+    justify-content: center;
+}
+#iphonese1>img{
+    width: 100%;
+} */
+#iphonese{
+    background-color: #fbfbfd;
+    width:100%;
+    
+}
+#iphonese>div{
+    display:flex;
+    justify-content: center;
+}
+#iphonese>div>h5{
+    padding-top: 50px;
+    font-size: 20px;
+}
+#iphonese>#logose>img{
+    height:40px;
+    width:15%;
+}
+#iphonese>div>p{
+    padding-top: 20px;
+    font-size: 30px;
+}
+#buyanchor>a{
+    margin-right: 30px;
+    font-size: 25px;
+}
+/* #iphonese>#sepic{
+    width: 60%;
+} */
+#sepic>img{
+    
+    width:70%;
 }
 
