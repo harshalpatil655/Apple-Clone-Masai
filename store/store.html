@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #body{
+      background-attachment:#9f9fa3fd ;
+    }
+         #navbar {
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        background-color: black;
+        padding: 10px;
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        /* padding-left: 75px; */
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        
+      }
+     
+      #navbar a:hover {
+        color: white;
+      }
+      #navbar a {
+        cursor: pointer;
+      }
+      img{
+          width: 39px;
+          height: 39px;
+          border-radius: 15px;
+
+      }
+      .left{
+padding-left: 150px;
+      }
+      .adj{
+          padding-top: 11px;
+      }
+      #container{
+          
+          width: 70%;
+          height: 400px;
+          margin-left: 260px;
+          display: flex;
+          font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+      }
+      .first{
+        /* border: 1px solid black; */
+          width: 80%;
+          height: 80%;
+          color: #6e6e73;
+          padding-top: 100px;
+          padding-left: 50px;
+          font-size: x-large;
+      }
+      .first::before{
+          color: black;
+          content: Store;
+      }
+      #color{
+          color: black;
+      }
+      .second{
+        /* border: 1px solid black; */
+          width: 50%;
+          height: 80%;
+          color: #6e6e73;
+          padding-top: 100px;
+          padding-left: 50px;
+      }.flex{
+          
+        display: flex;
+        gap: 10px;
+      }
+      h3{
+          color: black;
+          margin-bottom: -10px;
+      }
+      .color2{
+          color: blue;
+      }
+      .flex>div+div{
+          margin-top: -15px;
+      }
+      .flex>div{
+         padding-top:30px ;
+      }
+      #cylinder {
+        /* border: 1px solid red; */
+        /* width: 130%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 24px; */
+        margin-left: 370px;
+        gap: 40px;
+        justify-content: center;
+        width: 100%;
+    vertical-align: top;
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 40px;
+      }
+      .size{
+          width:130px;
+          height: 78px;
+          /* border: 1px solid black; */
+          justify-content: center;
+          display: block;
+          
+      }
+      .location{
+          color: #6e6e73;
+          margin-left: 300px;
+      }
+      .display{
+          display: block;
+          border: 1px solid black;
+      }
+      .text{
+         /* border: 1px solid black; */
+       font-weight: 550;
+      padding-left: 40px;
+      font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        color:black ;
+        display: block;
+      }
+      #container2{
+        /* border: 1px solid black; */
+        width: 100%;
+    vertical-align: top;
+    display:inline-flex;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-left: 270px;
+    /* grid-template-columns: repeat(7,1fr); */
+    /* color: #000; */
+      }
+      .class{
+        display:inline-flex;
+        color: white;
+    
+        
+      }
+      #id1:hover, #id2:hover, #id3:hover, #id4:hover, #id5:hover, #id6:hover, #id7:hover,#ida:hover,#idb:hover,#idc:hover,.size:hover{
+          zoom: 101%;
+      }
+     #id1{
+         /* border: 1px solid red; */
+        width: 400px;
+    height: 500px;
+    margin-left: 25px;
+   background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-13-pro-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645052290504");
+    color: black;
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .class>div>h2{
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin-right: 25px;
+            margin-left: 25px;
+          font-weight: 400;
+          font-size: larger;
+      }
+      .class>div>p{
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin-right: 25px;
+            margin-left: 25px;
+            color: #6e6e73;
+      }
+      .class>div>h1{
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin-right: 25px;
+            margin-left: 25px;
+            font-weight: 700;
+            font-size: x-large;
+      }
+      #id2{
+         /* border: 1px solid red; */
+        width: 400px;
+        border-radius: 25px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 500px;
+    margin-left: 25px;
+   background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-ipad-air-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645636337374");
+    color: white;
+      }
+      #id3{
+         /* border: 1px solid red; */
+        width: 400px;
+        border-radius: 25px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 500px;
+    margin-left: 25px;
+   background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-mac-studio-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645043848581");
+    color: black;
+      }
+      #id4{
+        /* border: 1px solid red; */
+        width: 400px;
+        border-radius: 25px;
+    height: 500px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 25px;
+   background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-studio-display-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645043848762");
+    color: black;
+      }
+      #id5{
+        /* border: 1px solid red; */
+        width: 400px;
+        border-radius: 25px;
+    height: 500px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 25px;
+   background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-se-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645052592978");
+    color: black;
+      }
+      #id6{
+        /* border: 1px solid red; */
+        width: 400px;
+        border-radius: 25px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 500px;
+    margin-left: 25px;
+   background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-13-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645052290452");
+    color: black;
+      }
+      #id7{
+        
+        width: 400px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 25px;
+    height: 500px;
+    margin-left: 25px;
+   background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-watch-bands-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645052880599");
+    color: black;
+      }
+      .location2{
+        color: #6e6e73;
+          margin-left: 300px;
+         
+      }
+      #container3{
+          display: inline-flex;
+          margin-left: 300px;
+
+      }
+      #ida{
+    height: 500px;
+    width: 500px;
+ /* border: 1px solid red; */
+ font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+ border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ color: black;
+ padding-left: 27px;
+ margin-right: 20px;
+        background: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-specialist-202108?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1626296836000");
+      }
+      #idb{
+    height: 230px;
+    width: 450px;
+ /* border: 1px solid red; */
+margin-bottom: 20px;
+ color: black;
+ 
+ padding-left: 15px;
+ padding-right: 15px;
+ margin-right: 20px;
+ padding-top: 15px;
+ font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+ border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ 
+        background: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-25-apps-202108?wid=480&hei=240&fmt=p-jpg&qlt=95&.v=1626223748000");
+      }
+      #idb>h1,#idc>h1{
+        font-weight:500;
+        font-size: xx-large;
+      }
+      #idc{
+    height: 230px;
+    width: 450px;
+    padding-top: 15px;
+ /* border: 1px solid red; */
+ font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+ border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ color: black;
+ padding-left: 15px;
+ padding-right: 15px;
+ margin-right: 20px;
+        background: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-25-genius-202108?wid=480&hei=240&fmt=p-jpg&qlt=95&.v=1626384443000");
+      }
+      #container4{
+          /* border: 1px solid red; */
+          color: black;
+          display: grid;
+          width: 130%;
+          grid-template-columns: repeat(6,1fr);
+          margin-left: 270px;
+
+      }
+      #container4>div{
+          margin: 20px 35px;
+          gap: 20px;
+
+      }
+    #idd{
+          color: #3f6eb8;
+      }
+      #ide{
+          color:#ff0154;
+      }
+      #idf{
+color: #007aff;
+      }
+      #idg{
+        color:#f6895f
+      }
+      #idh{
+        color: #ac39ff;
+      }
+      #idi{
+        color: #68cc45;
+      }
+      #container4>div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        gap: 20px;
+        height: 220px;
+        padding: 53px 25px 0px 25px;
+        border-radius: 19px;
+
+      }
+      #container4>div:hover{
+          zoom:101%;
+      }
+      #container5{  color: black;
+        /* border:1px solid red; */
+          display:inline-flex;
+         
+          gap: 20px;
+          font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+          grid-template-columns: repeat(6,1fr);
+          margin-left: 270px;
+      }
+      .class1{
+        /* border: 1px solid black; */
+        height: 500px;
+        width: 400px;
+        color:black;
+        margin-left: 30px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 25px;
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-new-accessories-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645052150646");
+      }
+      .class1>h1{
+        padding: 25px 25px 0px 15px;
+        font-weight: 600;
+        margin-top: 35px;
+        font-size: x-large;
+      }
+      .class1>h2{
+        padding: 0px 25px 0px 15px;
+        font-weight: 200;
+        font-size: large;
+      }
+    
+      .class2>img{
+        height: 60%;
+        border-radius: 25px;
+        width: 100%;
+
+      }
+      .class2{
+        /* border: 1px solid blue; */
+        width: 350px;
+        height: 500px;
+        border-radius: 25px;
+
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      }
+      .class2>p{
+        color: #d17945;
+        padding: 10px 25px;
+        margin-bottom: -10px;
+        margin-left: 25px
+      }
+      .class2>h3{
+      padding-left: 25px;
+        margin-left: 25px;
+        font-weight: 600;
+      }
+      .class2>h4{
+        padding-left: 25px;
+        margin-left: 25px;
+        padding-top: 25px; ;
+        font-weight: 200;
+        color: #a8a8a9;
+      }
+      .class2:hover,.class1:hover,.class3:hover,.class4:hover{
+        zoom: 101%;
+      }
+      #container6{
+         /* border:1px solid red; */
+         display:inline-flex;
+         
+         gap: 20px;
+         font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+         grid-template-columns: repeat(6,1fr);
+         margin-left: 270px;
+      }
+      .class3{
+        /* border: 1px solid black; */
+        height: 500px;
+        width: 400px;
+        color:black;
+        margin-left: 30px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 25px;
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-applemusic-202112?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1638212879000");
+     
+      }
+      .class3>h1{
+        padding-top: 20px;
+        padding-left: 25px;
+        font-weight: 500;
+      }
+      .class3>h3{
+       
+        padding-left: 25px;
+        font-weight: 200;
+      }
+      .class4>img{
+        height: 60%;
+        border-radius: 25px;
+        width: 100%;
+
+      }
+      
+      .class4{
+        /* border: 1px solid blue; */
+        width: 350px;
+        height: 500px;
+        border-radius: 25px;
+
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      }
+      .class4>p{
+        color: #d17945;
+        padding: 10px 25px;
+        margin-bottom: -10px;
+        margin-left: 25px
+      }
+      .class4>h3{
+      padding-left: 25px;
+        margin-left: 25px;
+        font-weight: 600;
+      }
+      .class4>h4{
+        padding-left: 25px;
+        margin-left: 25px;
+        padding-top: 25px; ;
+        font-weight: 200;
+        color: #a8a8a9;
+      }
+      #container7{
+         /* border:1px solid red; */
+         display:inline-flex;
+         width: 130%;
+         gap: 20px;
+         font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+         grid-template-columns: repeat(6,1fr);
+         margin-left: 270px;
+         border-radius: 25px;
+         color: black;
+      }
+      .class5{
+        width: 480px;
+        height: 500px;
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        border-radius: 25px;
+        height: 500px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-todayatapple-202108?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1625788042000");
+      }
+      .class5>h1,.class6>h1,.class7>h1,.class8>h1{
+        color: black;
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-weight: 550;
+        font-size: x-large;
+        padding: 0px 15px 0px 15px;
+
+      }
+      .class5>h4, .class6>h4, .class7>h4, .class8>h4{
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-weight: 400;
+        color: #6e6e73;
+        padding: 15px 15px 0px 15px;
+      }
+      .class6{
+        width: 480px;
+        height: 500px;
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        border-radius: 25px;
+        height: 500px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-subscriptions-202108_GEO_US?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1626375546000");
+      }
+      .class7{
+        width: 480px;
+        height: 500px;
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        border-radius: 25px;
+        height: 500px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-applepay-202203?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1645052537753");
+      }
+      .class8{
+        width: 480px;
+        height: 500px;
+        font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        border-radius: 25px;
+        height: 500px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-homekit-202110_GEO_US?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1634069685000");
+      }
+      .class5:hover,.class6:hover,.class7:hover,.class8:hover{
+        zoom: 102%;
+      }
+      #id11{
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-edu-202108?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1627492399000");
+        color: black;
+        /* border: 1px solid red; */
+        width: 400px;
+        border-radius: 25px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        
+      }
+      #container8{
+      gap: 20px;
+        /* border: 1px solid black; */
+        width: 100%;
+    vertical-align: top;
+    display:inline-flex;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-left: 270px;
+    /* grid-template-columns: repeat(7,1fr); */
+    /* color: #000; */
+      
+      }
+      #id12{
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-small-business-202108?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1627318784000");
+        color: white;
+        /* border: 1px solid red; */
+        width: 400px;
+        border-radius: 25px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        
+      }
+      #id13{
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-gov-202108?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1632870676000");
+        color: white;
+        /* border: 1px solid red; */
+        width: 400px;
+        border-radius: 25px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        
+      }
+      #id14{
+        background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-veterans-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645468079106");
+        color: black;
+        /* border: 1px solid red; */
+        width: 400px;
+        border-radius: 25px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        
+      }
+      .classa{
+        display:inline-flex;
+        color: white;
+    gap: 20px;
+        height: 500px;
+      }
+      #id11>p, #id12>p, #id13>p, #id13>p{
+        color: #6e6e73;
+       padding-left: 20px ;
+       padding-top: 20px;
+      margin-bottom: -10px;
+      }
+      #id11>h1,#id12>h1, #id13>h1, #id13>h1{
+        padding-left: 20px ;
+       font-size: xx-large;
+      }
+      #id11:hover, #id12:hover, #id13:hover, #id14:hover{
+        zoom: 101%;
+      }
+      #container9{
+        margin-left: 270px;
+        /* border: 1px solid red; */
+        height: 200px;
+        padding-top: 20px;
+        
+      }
+      .btn{
+    background-color: #e8e8ed;
+    width: 700px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+    color: black;
+    padding: 15px ;
+    /* margin-top: 149px; */
+
+
+
+      }
+      #container10{
+        /* border: 1px solid red; */
+        color: #6e6e73;
+        width: 1180px;
+        /* height: 1990px; */
+        margin-top: -120px;
+        margin-left: 300px;
+      
+      }
+      #container10>p{
+        margin-bottom: 15px;
+      }
+      #inline{
+        display: flex;
+        /* border: 1px solid red; */
+        width: 300px;
+        height: 10px;
+        font-weight: 100;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        gap: 20px;
+      }
+      #inline>p{
+        margin-top: -2px;
+        margin-left: 15px;
+      } 
+     #color2{
+       color: #6fa2da;
+
+     }
+     .color2:hover{
+ text-decoration: underline;
+ zoom: 101%;
+     }
+    </style>
+</head>
+<body id="body">
+    <div id="navbar">
+        <div ><a target="_blank" href="index.html"><i class="fa-brands fa-apple"></i></div>
+        <div ><a href="store.html">Store</a></div>
+        <div ><a href="signup.html">Mac</a></div>
+        <div ><a href="login.html">iPad</a></div>
+        <div ><a href="iphone.html">iPhone</a></div>
+        <div ><a href="women.html">Watch</a></div>
+        <div ><a href="signup.html">AirPods</a></div>
+        <div ><a href="login.html">TV & Home</a></div>
+        <div ><a href="cart.html">Only on Apple</a></div>
+        <div ><a href="signup.html">Accessories</a></div>
+        <div ><a href="login.html">Support</a></div>
+        <div><a href="cart.html"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></div>
+</div>
+      <div id="container">
+       <div class="first">
+           <h1> <span id="color">Store.</span>  The best way to buy the products you love.</h1>
+       </div>
+       <div class="second">
+           <div>
+               <div class="flex">
+                   <div>
+                   <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-chat-specialist-icon_AV3?wid=36&hei=36&fmt=jpeg&qlt=95&.v=1638914057000"/>
+                </div>
+                  <div>
+                       <h3> Need shopping help?</h3>
+                        <p class="color2">Ask a Specialist</p>
+                  </div>
+               </div>
+               <div>
+                <div class="flex">
+                    <div>
+                    <img src="https://flyclipart.com/thumb2/apple-logo-media-seo-social-web-icon-290862.png"/>
+                 </div>
+                   <div>
+                        <h3> Visit an Apple Store</h3>
+                         <p class="color2">Find one near you <i class="fa-regular fa-angle-right"></i></p>
+                   </div>
+                </div>
+               </div>
+           </div>    
+       </div>
+  </div>
+      <div id="cylinder">
+      </div>
+      <div>
+        <h1 class="location"> <span id="color">The latest. </span>  Take a look at what’s new, right now.</h1>
+      </div>
+    <div id="container2">
+
+        <div class="class">
+            <div id="id1">
+               <p>IPhone 13 Pro</p>
+               <h1>Oh.So.Pro.</h1>
+               <h2>Now in Alpine Green. From $999.00 or $41.62 /mo. for 24 mo. *</h2>
+            </div>
+            <div id="id2">
+            <p >IPAD AIR</p>
+            <h1>Light.Bright.Full Moon might</h1>
+            <h2>From $599.00 or $41.62/mo. for 12 mo.</h2>
+            </div>
+            <div id="id3">
+                <p>MAC STUDIO</p>
+                <h1>Empower station.</h1>
+                <h2>From $1999.00 or $166.58/mo. for 12 mo.</h2>
+                </div>
+                <div id="id4">
+                    <p>STUDIO DISPLAY</p>
+                    <h1>A Sight To Be Bold</h1>
+                    <h2>From $1599.00 or $133.25/mo. for 12 mo.</h2>
+                    </div>
+                    <div id="id5">
+                        <p>IPHONE SE</p>
+                        <h1>Love The Power. <br>Love The Price.</h1>
+                        <h2>From $429.00 or $17.87/mo. for 24 mo.</h2>
+                        </div>
+                        <div id="id6">
+                            <p>IPHONE 13</p>
+                            <h1>Your New Superpower.</h1>
+                            <h2>Now in Green. From $699.00 or $29.12 /mo. for 24 mo.*</h2>
+                            </div>
+                            <div id="id7">
+                                <p>APPLE WATCH BAND </p>
+                                <h1>New Hue In Bloom</h1>
+                                <h2>Shop the latest Band styles and colors</h2>
+                                </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="location2"> <span id="color">Help is here. </span> Whenever and however you need it.</h1>
+      </div>
+<div id="container3">
+    <div id="ida">
+        <h1>Shop one on one with a specialist.online or in store.</h1>
+
+    </div>
+    <div>
+        <div id="idb"> 
+          <h1>Get to know your new device <br> with a free personal session.</h1>
+        </div>
+        <div id="idc">
+            <h1>Get expert servises <br> and support at the <br> Genius bar.</h1> </div>
+    </div>
+
+</div>
+<div>
+    <h1 class="location2"> <span id="color">The Apple difference.</span>  Even more reasons to shop with us.</h1>
+  </div>
+  <div id="container4">
+      <div>
+          <div>
+            <i id="idd" class="fa-solid fa-bag-shopping fa-2xl"></i>
+          </div>
+          <div>
+              <h2><span id="idd">Convenient pickup option.</span> that fit into your everyday schedule</h2>
+          </div>
+      </div>
+      <div>
+        <div>
+            <i  id="ide" class="fa-solid fa-box fa-2xl"></i></i>
+          </div>
+          <div>
+              <h2>Choose fast,free delivery or<span id="ide">two-hour courier delivery.</span> </h2>
+          </div>
+      </div>
+      <div>
+        <div>
+            <i id="idf"  class="fa-regular fa-face-grin-wide fa-2xl"></i>
+          </div>
+          <div>
+              <h2> Make them yours. <span id="idf">Engrave a mix of emoji,names,and numbers for free.</span></h2>
+          </div>
+      </div>
+      <div>
+        <div>
+            <i id="idg" class="fa-brands fa-apple fa-2xl"></i>
+          </div>
+          <div>
+              <h2><span id="idg">Customise</span> your Mac and create your own style of Apple Watch.</h2>
+          </div>
+      </div>
+      <div>
+        <div>
+            <i id="idh" class="fa-solid fa-laptop-mobile fa-2xl"></i>
+          </div>
+          <div>
+              <h2><span id="idh">Trade your current device.</span> Get credit towards new one.</h2>
+          </div>
+      </div>
+      <div>
+        <div>
+            <i id="idi" class="fa-regular fa-credit-card fa-2xl"></i>
+          </div>
+          <div>
+              <h2>Pay in full or <span id="idi">pay over time.</span> your choice.</h2>
+          </div>
+      </div>
+
+  </div>
+
+  <div>
+    <h1 class="location2"> <span id="color">Accessories.</span>  Essentials that pair perfectly with your favorite devices.</h1>
+  </div>
+<div id="container5">
+     <div class="class1">
+    <h1>In with the new.</h1>
+    <h2>Discover fresh new colors for your favourite accessories.</h2>
+       </div>
+       <div class="class2" >
+<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN683?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645997365583" alt="">
+
+<p>New</p>
+<h3>iPhone 13 Pro Silicone Case <br> With MagSafe - Nectarine</h3>
+<h4>$49.00</h4>
+       </div>
+       <div class="class2" >
+    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6G3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645509710532" alt="">
+    <p>New</p>
+    <h3>iPhone SE Silicone Case-chalk <br> Pink</h3>
+    <h4>$35.00</h4>
+      </div>
+      <div class="class2" >
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN613?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645847133062" alt="">
+        <p>Now with Find my Support</p>
+        <h3>iPhone 13  Silicone Case With <br>  MagSafe - Blue Fog</h3>
+        <h4>$49.00</h4>
+          </div>
+          <div class="class2" >
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MM0W3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1629865215000" alt="">
+            <p>New</p>
+            <h3>iPhone Leather Wallet With <br>  MagSafe - Wisteria</h3>
+            <h4>$59.00</h4>
+              </div>
+              <div class="class2" >
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN193ref?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645079889405" alt="">
+                <p>New</p>
+                <h3>45mm Bright Green Braided <br> Solo Loop- Size 6</h3>
+                <h4>$99.00</h4>
+                  </div>
+                  <div class="class2" >
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MM013?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1624640873000" alt="">
+                    <p></p>
+                    <h3>AirTag Leather Loop-Forest <br>Green</h3>
+                    <h4>$39.00</h4>
+                    </div>
+<div>
+</div>
+
+</div>
+<div>
+  <h1 class="location2"> <span id="color">Loud and clear.</span>   Unparalleled choices for rich, high-quality sound.</h1>
+</div>
+<div id="container6">
+  <div class="class3">
+    <h1>Get 6 months of <br>Apple Music free.</h1>
+    <h3>Include with purchase of select AirPods <br> and Beats products ,and HomePod mini.**</h3>
+      </div>
+      <div class="class4">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1632861342000" alt="">
+
+<p> Free Engraving</p>
+<h3>AirPods (3rd generation)<br>  </h3>
+<h4>$179.00</h4>
+      </div>
+      <div class="class4">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2J3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1634663503000" alt="">
+
+<p> Free Engraving</p>
+<h3>Beats Fit Pro True Wireless <br>Ear buds-Sage Gray </h3>
+<h4>$179.00</h4>
+      </div>
+      <div class="class4">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1632861342000" alt="">
+
+<p> Free Engraving</p>
+<h3>AirPods Pro<br>  </h3>
+<h4>$249.00</h4>
+      </div>
+      <div class="class4">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-mini-select-orange-202110?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1632925511000" alt="">
+
+<p> </p>
+<h3>HomePod mini - Orange <br> </h3>
+<h4>$99.00</h4>
+      </div>
+      <div class="class4">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1604021221000" alt="">
+
+<p> Free Engraving</p>
+<h3>AirPods Max -Silver <br> </h3>
+<h4>$549.00</h4>
+      </div>
+</div>
+<div>
+  <h1 class="location2"> <span id="color">Do more with Apple products. </span>   Here’s where the fun begins.</h1>
+</div>
+<div id="container7">
+  <div class="class5">
+    <h4>WATCH AND LEARN</h4>
+    <h1>Join a Today at Apple virtual <br> session.</h1>
+       </div>
+       <div class="class6">
+        <h4> <br></h4>
+        <h1>Six Apple services.One <br> easy subscription</h1>
+           </div>
+           <div class="class7">
+            <h4> <br></h4>
+            <h1>Discover all the ways to <br> use Apple Pay.</h1>
+               </div>
+               <div class="class8">
+                <h4>HOME</h4>
+                <h1>See how one can can <br> control your entire home.</h1>
+                   </div>
+</div>
+<div>
+  <h1 class="location"> <span id="color">Shop by group. </span>   Get special pricing for students, businesses, and more.</h1>
+</div>
+<div id="container8">
+
+  <div class="classa">
+      <div id="id11">
+         <p>EDUCATION</p>
+         <h1>Save on Mac or iPad with <br> education pricing.</h1>
+        
+      </div>
+      <div id="id12">
+      <p >BUSINESS</p>
+      <h1>From enterprise to small bussiness,we'll work with you.</h1>
+      </div>
+      <div id="id13">
+          <p>GOVERNMENT</p>
+          <h1>Special pricing is available for state, local, and federal agencies.</h1>
+          </div>
+          <div id="id14">
+              <p>VETERANS AND MILITARY</p>
+              <h1>Active and veteran members may be eligible for exclusive savings</h1>
+              </div>
+   </div>
+
+</div>
+<div>
+  <h1 class="location"> <span id="color">Quick Links </span> </h1>
+</div>
+<div id="container9">
+
+</div>
+<div id="container10">
+<p>* Pricing for iPhone 13 and iPhone 13 mini includes a $30 carrier instant discount that requires activation with AT&T, T-Mobile, Sprint, or Verizon. Available to qualified customers and requires 24-month installment loan when you select Citizens One or Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple. iPhone activation required with AT&T, T-Mobile, Sprint, or Verizon for purchases made with ACMI at an Apple Store. Subject to credit approval and credit limit. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. Additional Apple Card Monthly Installments terms are in the Apple Card Customer Agreement. Additional iPhone Payments terms are here. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount.</p>
+<p>** Offer is available for new subscribers who connect an eligible device to an Apple device running iOS 15 or iPadOS 15 or later, for a limited time only. Offer good for 3 months after eligible device pairing. Plan automatically renews at your region’s price per month until cancelled. No purchase necessary for current owners of eligible devices. Service availability varies by region. Restrictions and other terms apply.</p>
+<p>◊ Apple Card Monthly Installments (ACMI) is a 0% APR payment option available to select at checkout for certain Apple products purchased at Apple Store locations, apple.com(Opens in a new window), the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See https://support.apple.com/kb/HT211204(Opens in a new window) for more information about eligible products. Variable APRs for Apple Card other than ACMI range from 10.99% to 21.99% based on creditworthiness. Rates as of April 1, 2020. If you choose the pay-in-full or one-time-payment option for an ACMI eligible purchase instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable APR assigned to your Apple Card. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the Apple Card Customer Agreement(Opens in a new window) for more information. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. iPhone activation required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Sprint, Verizon, or T-Mobile.</p>
+<p>† Monthly pricing is available when you select Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple, and is subject to credit approval and credit limit. Financing terms vary by product. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the Apple Card Customer Agreement for more information. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount.</p>
+<p>To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.</p>
+<p>Available for qualifying applicants in the United States.
+<br> Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
+<p><span id="color"> 1. AT&T Special Deal: </span>  Offer pricing will reflect application of AT&T trade‑in credit applied over 36 months after trade‑in of eligible smartphone. Requires upgrade of an existing line or activation of a new line and purchase of a new iPhone 13 mini, iPhone 13, iPhone 13 Pro, or iPhone 13 Pro Max on qualifying 36‑month 0% APR installment plan, subject to carrier credit qualification. AT&T Installment Plan with Next Up is not eligible for this promotion. $0 down for well-qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. Requires activation on eligible unlimited plan. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $30. Trade‑in device may not be on existing installment plan. Bill credits are applied as a monthly credit over the 36‑month installment plan. Credits start within 3 bills. Will receive catch‑up credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited‑time offer; subject to change. Limits: one trade‑in per qualifying purchase and one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Price for iPhone 13 and iPhone 13 mini includes $30 AT&T instant discount. Activation required.</p>
+<p> <span id="color">T-Mobile/Sprint Special Deal:</span> Buy an iPhone 13 Series or iPhone 12 series and trade in a qualifying device (iPhone X, iPhone XS, iPhone XS Max, iPhone XR, iPhone 11, iPhone 11 Pro, iPhone 11 Pro Max, iPhone 12, iPhone 12 mini, iPhone 12 Pro, and iPhone 12 Pro Max) to receive (i) Apple instant trade-in credit and (ii) an additional $200 back in bill credits on your T-Mobile/Sprint rate plan. Bill credits will be applied over 24 months toward your rate plan charges; must be active and in good standing to receive credits; allow 2 bill cycles from valid submission and validation of trade in. Tax on pre-credit price due at sale. Limited-time offer; subject to change. Qualifying credit, service, and trade-in in good condition required. T-Mobile/Sprint in stores and on customer service calls, $30 assisted or upgrade support charge may be required. Max 4/account. May not be combinable with some offers or discounts. Price for iPhone 13, iPhone 13 mini, iPhone 12, and iPhone 12 mini includes $30 T-Mobile/Sprint instant discount. Activation required.  </p>
+<p><span id="color">Verizon Special Deal:</span> Offer pricing will reflect application of Verizon's trade-in credit up to $440 (iPhone 13, iPhone 13 Pro, and iPhone 13 Pro Max) or $412 (iPhone 13 mini) or $425 (iPhone 12) or $375 (iPhone 12 mini) after trade-in of eligible smartphone. Savings comprised of (i) Apple instant trade-in credit at checkout and (il) Verizon monthly bill credits applied over 36 months. Customer must remain in the Verizon Device Payment Program for 36 months to receive the full benefit of the Verizon bill credits. Bill credits may take 1-2 bill cycles to appear. If it takes two cycles for bill credits to appear, you'll see the credit for the first cycle on your second bill in addition to that month's credit. Requires purchase and activation of a new iPhone 12 mini, iPhone 12, iPhone 13 mini, iPhone 13, iPhone 13 Pro, or iPhone 13 Pro Max with the Verizon Device Payment Program at 0% APR for 36 months, subject to carrier credit qualification, and iPhone availability and limits. Taxes and shipping not included in monthly price. Sales tax may be assessed on full value of new iPhone. Requires eligible unlimited service plan. Requires trade-in of eligible device in eligible condition. Must be at least 18 to trade-in. Apple or its trade-in partners reserve the right to refuse or limit any trade-in transaction for any reason. In-store trade-in requires presentation of a valid. government-issued photo ID (local law may require saving this information). In-store promotion availability subject to local law; speak to a Specialist to learn more. Limited- time offer; subject to change. Additional terms from Apple, Verizon, and Apple's trade-in partners may apply. Price for iPhone 12 mini, iPhone 12, iPhone 13 mini, and iPhone 13 includes $30 Verizon instant discount. Activation required.</p>
+<p>2. Special pricing available to qualified customers. To learn more about how to start qualifying toward special pricing, talk to an Apple Specialist in a store or give us a call at 1‑800‑MY‑APPLE.</p>
+<p></p>
+<p></p>
+<p>†† We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to Apple.
+  </p>
+  <hr></hr>
+  <div id="inline">
+    <i class="fa-brands fa-apple"></i> 
+    <i id="'pp" class="fa-solid fa-chevron-right"></i>
+   <p>Apple Store Online</p>
+  </div>
+  <hr>
+  <p>Shop and Learn</p>
+  <hr>
+  <p>Apple store</p>
+  <hr>
+  <p>For Education</p>
+  <hr>
+  <p>For Business</p>
+  <hr>
+  <p>Government</p>
+  <hr>
+  <p>For Healthcare</p>
+  <hr>
+  <p>Apple Values</p>
+  <hr>
+  <p>Account</p>
+  <hr>
+  <p>About Apple</p>
+  <hr>
+  <p>More ways to shop:<span  id="color2"> Find an Apple Store </span>or<span id="color2">  other retailer</span> near you. Or call 1‑800‑MY‑APPLE.</p>
+<p>United States</p>
+<p>Copyright © 2022 Apple Inc. All rights reserved</p>
+<p>Privacy policy |  Terms of Use | Sales and Refunds | Legal | Site Map</p>
+</div>
+
+</body>
+</html>
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+crossorigin="anonymous"></script>
+<script>
+var product=[
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-mac-nav-202203?wid=200&hei=130&fmt=png-alpha&.v=1645051958490",
+        name:"MAC",
+    },
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202109_GEO_US?wid=200&hei=130&fmt=png-alpha&.v=1630706116000",
+        name:"iPhone",
+    },
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783381000",
+        name:"iPad",
+    },
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202203?wid=200&hei=130&fmt=png-alpha&.v=1645052537409",
+        name:"Apple Watch",
+    },
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airpods-nav-202110?wid=200&hei=130&fmt=png-alpha&.v=1633718741000",
+        name:"AirPods",
+    },
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783380000",
+        name:"AirTags",
+    },
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-appletv-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783378000",
+        name:"Apple TV",
+    },
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-homepod-nav-202110?wid=200&hei=130&fmt=png-alpha&.v=1633355783000",
+        name:"HomePod Mini",
+    },
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-accessories-nav-202203?wid=200&hei=130&fmt=png-alpha&.v=1645051958489",
+        name:"Accessories",
+    },
+    {
+        image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-holiday-giftcards-asit-agc-nav-202111?wid=200&hei=130&fmt=png-alpha&.v=1635264815000",
+        name:"Apple Gift Card",
+    },
+]
+product.map(function(elem){
+var box = document.createElement("div");
+
+
+var img = document.createElement("img");
+img.src = elem.image_url;
+img.setAttribute("class","size");
+
+var names = document.createElement("h4");
+names.innerText=elem.name;
+names.setAttribute("class","text");
+box.append(img,names);
+
+document.querySelector("#cylinder").append(box);
+});
+// var products=[
+//   {
+//     image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN683?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645997365583",
+//     highlight:"New",
+//     name:"iPhone 13 Pro Silicone Case With MagSafe - Nectarine",
+//     price:"$49.00"
+    
+//   },
+//   {
+//     image_url:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6G3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645509710532",
+//     highlight:"New",
+//     name:"iPhone SE Silicone Case-Chalk Pink",
+//     price:"$35.00"
+    
+//   }
+// ]
+// products.map(function(elem){
+// var box1=document.createElement("div");
+// box1.setAttribute("id","box1");
+
+// var image=document.createElement("img");
+// image.src=elem.image_url;
+// image.setAttribute("class","class2");
+
+// var high=document.createElement("p");
+// high.innerText=elem.highlight;
+// var names = document.createElement("h4");
+// names.innerText=elem.name;
+// names.setAttribute("class","text1");
+
+// var prices=document.createElement("h3");
+// prices.innerText=elem.price;
+
+// box.append(image,high,names,prices);
+
+// document.querySelector(".container6").append(box1);
+// });
+
+var btns=[
+  {
+    name:"Order Status",
+  },
+  {
+    name:"Shopping Help",
+  },
+  {
+    name:"Returns",
+  },
+]
+btns.map(function(elem){
+  var btn=document.createElement("btn");
+  btn.innerText=elem.name;
+  
+  btn.setAttribute("class","btn")
+document.querySelector("#container9").append(btn);
+});
+
+</script>
