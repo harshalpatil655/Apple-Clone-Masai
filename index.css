@@ -5,6 +5,8 @@
     margin: 0px;
     padding-top: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
 }
 #navbar{
     height: 50px;
@@ -51,6 +53,7 @@ div>img{
 div>a{
     color:#478fd9;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* /////////////   Pro   //////////
@@ -74,11 +77,16 @@ div>a{
 #iphone13link{
     display:flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
+   
     
 }
 #iphone13link>a{
-    margin-right: 50px;
+    margin-right: 70px;
+}
+#iphone13link>a>i{
+    
+    font-size: 15px;
 }
 #pro>#iphone13pic{
     display: flex;
@@ -122,12 +130,14 @@ div>a{
     font-size: 30px;
 }
 #buyanchor>a{
+    margin-top: 10px;
     margin-right: 30px;
-    font-size: 25px;
+    font-size: 22px;
 }
-/* #iphonese>#sepic{
-    width: 60%;
-} */
+#buyanchor>a>i{
+    font-size: 15px;
+}
+
 #sepic>img{
     
     width:70%;
@@ -142,23 +152,23 @@ div>a{
     width:100%;  
 } */
 #bigimage{
-    height:600px;
+    height:700px;
     color:white;
     position: relative;
-    background-image: url("https://images.indianexpress.com/2022/03/CODA-movie-1200by667.jpg");
+    background-image: url("https://www.apple.com/v/home/an/images/heroes/tv-plus-oscar-coda/hero_coda__cv3jny7jpe6a_medium.jpg");
     background-size: cover;
     
 }
 #bigimage>div:nth-child(1){
    
     text-align: center;
-    padding-top: 30px;
+    padding-top: 90px;
 }
 #bigimage>div:nth-child(1)>p{
     font-size: 55px;
 }
 #bigimage>div:nth-child(2){
-    height:250px;
+    height:300px;
    
     text-align: center;
     padding-top: 50px;
@@ -176,42 +186,111 @@ div>a{
 ------------------------------------
 ===================================== */
 
+
+
+
 #studio{
+    
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    gap:10px;
+    grid-template-rows: repeat(3,650px);
+    gap: 10px;
+    
+    
+   
+}
+#studio>.display{
+    background-image: url("https://www.apple.com/v/home/an/images/promos/studio-display/promo_studiodisplay_avail__d1cx9j73ooq6_medium.jpg");
+    background-size: cover;
+   
     text-align: center;
-    
-
-}
-#studio>div{
-    background-color: aqua;
 }
 
-#studio>div>a{
-    margin-right: 30px;
-    font-size: 15px;
-    
+.display>h1{
+    font-size: 50px;
+    margin-top: 50px;
 }
-#studio>div>a>i{
+.display>h4{
+    font-size: 25px;
+}
+a>i{
+    margin-top: 20px;
     font-size: 12px;
-    margin-left: 7px;
+    margin-right: 30px;
 }
-#monitor>img{
+#mac{
+   
+    background-image: url("https://www.apple.com/v/home/an/images/promos/mac-studio/promo_macstudio_avail__byhwkp0o4gty_medium.jpg");
+    background-size: cover; 
+    text-align: center;
+}
+.display>h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.display>h4{
+    font-size: 25px;
+}
+#ipad{
+   
+    background-image: url("https://www.apple.com/v/home/an/images/promos/ipad-air/promo_ipadair_avail__ferd4bfpcdm6_medium.jpg");
+    background-size: cover; 
+    text-align: center;
+}
+.display>img{
     
-    width:100%;
+    margin-top: 50px;
 }
-#studio>div>h1{
-    padding-top: 50px;;
-    font-size: 40px;
+.display>h5{
+    color: white;
+    font-size: 25px;
 }
-#studio>div>p{
-    font-size: 23px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#iphone13{
+   
+    background-image: url("https://www.apple.com/v/home/an/images/promos/iphone-13/promo_iphone13_avail__frc36u35m0ii_medium.jpg");
+    background-size: cover; 
+    text-align: center;
 }
-#ipad>img{
+.display>h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.display>h4{
+    font-size: 25px;
+}
+#watch{
+   
+    background-image: url("https://www.apple.com/v/home/an/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_medium.jpg");
+    background-size: cover; 
+    text-align: center;
+}
+.display>h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.display>h4{
+    font-size: 25px;
+}
+.display>h3{
+    color: #ce2b31;
+}
+#chain{
+   
+    background-image: url("https://www.apple.com/v/home/an/images/promos/esci-supplier-responsibility/promo_esci__dq6nssf6yp26_medium.jpg");
+    background-size: cover; 
+    text-align: center;
+}
+.display>h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+
+
+/* ===========================
+==========================
+============================ */
+/* #ipad>img{
     width:100%;
 }
 #ipadair{
@@ -221,11 +300,11 @@ div>a{
     gap:10px;
     justify-content: center;
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: #fbfbfd;
     
 }
 #ipadair>div{
-    background-color: red;
+    background-color: #fbfbfd;
 }
 #ipadair>div>h1{
     padding-top: 50px;;
@@ -251,10 +330,10 @@ div>a{
     grid-template-rows: auto;
     gap:10px;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: #fbfbfd;
 }
 #watch>div{
-    background-color: teal;
+    background-color: #fbfbfd;
 }
 #watch>div>a>i{
     font-size: 12px;
@@ -272,7 +351,7 @@ div>a{
 }
 #watch>div>h4{
     color:#d8585d;
-}
+} */
 
 /* ===============text==================
 --------------------------------------
@@ -294,6 +373,7 @@ div>a{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    
 }
 .container{
     max-width: 1100px;
