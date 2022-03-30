@@ -12,17 +12,42 @@ body {
     padding: 10px;
 }
 
+
+#navbar{
+    height: 50px;
+    width:100%;
+    background-color: #313132;
+    display:grid;
+    grid-template-columns: repeat(13,80px);
+    grid-template-rows: auto;
+    /* gap:10px; */
+    justify-content: center;
+}
+#navbar>div{
+    
+    /* border:1px solid red; */
+    color:rgb(173, 172, 172);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+
+
+
+
+/* 
 #nav>ul>li {
     color: white;
     display: inline-block;
     justify-content: space-around;
 
-}
+} */
 
 /* now i will take nav tag previous nav was nav id */
 nav {
     background-color: white;
-}
+} 
 
 #con {
     display: flex;
@@ -113,7 +138,9 @@ nav+div>p {
   button{
       border-radius: 10px;
       background-color: #0071e3;
-      font: 900;
+      /* height: 40px; */
+      font-size: 25px;
+      width: 58px;
       color: #f5f5f7;
       border: none;
       
@@ -166,16 +193,31 @@ nav+div>p {
    padding-left: 20px;
    /* border: 1px solid blue; */
    margin: 10px;
+   line-height: 30px;
 }
 
 .second>div:nth-child(1){
     
     text-align: center;
-    /* margin-top: 50px;  */
+    margin-top: 50px; 
 }
 
+ .second>div>p:nth-child(1){
+       color: #d99268;
+       font-size: 20px;
+ }
 
+ .second>div>p:nth-child(2){
+     color: black;
+     font-size: 30px;
+ } 
 
+ .second>div>h2{
+     font-size: 50px;
+     color: #385fda;
+     line-height: 50px;
+     text-align: center;
+ }
 
 
 #third{
@@ -219,11 +261,53 @@ nav+div>p {
     display: block;
     margin:auto;
     text-align: center;
+    line-height: 30px;
 
 }
 
 .sub{
     width: 100%;
 }
+
+         /*     div five      */
+.five{
+    border: 1px soid red;
+    width: 100%;
+    /* height: 200px; */
+    background-color: #ffffff;
+}
+
+.five>div{
+    width: 80%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    display: grid;
+    /* height: 600px; */
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: repeat(3,auto);
+     gap: 5px;
+     
+     
+}
+
+.five>div>div{
+    /* border: 1px solid green; */
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    line-height: 30px;
+    /* background-color: #ffffff; */
+}
+
+.five>div>div>h3{
+    font-size: 20px;
+    font-weight: 800;
+   
+}
+
+.five>div>div>p{
+    color: #787879;
+}
+
 
 

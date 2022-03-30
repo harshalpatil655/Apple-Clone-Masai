@@ -69,7 +69,14 @@ var nav_data = [{
     name: 'iphone 13',
     status: ""
 }
-]
+];
+
+// var iphone_data=[{
+
+
+//     icon_url: "https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_13_pro_camera__fonn9igfi7qm_large.png",
+
+// }]
 
 nav_data.map(function (elem) {
     var card = document.createElement('div')
