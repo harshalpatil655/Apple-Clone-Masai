@@ -25,6 +25,11 @@
     font-size: 12px;
 }
 
+#ipone>p{
+    text-decoration: none;
+}
+
+
 /* ----------unicef------------ */
 
 
@@ -351,9 +356,7 @@ ul{
     display:flex;
     justify-content: space-between;
 }
-#lastline>div{
-    
-}
+
 #baseflex{
     display:grid;
     grid-template-columns: repeat(5,1fr);
