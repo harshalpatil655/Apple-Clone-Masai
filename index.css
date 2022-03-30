@@ -4,6 +4,7 @@
 *{
     margin: 0px;
     padding-top: 0px;
+    box-sizing: border-box;
 }
 #navbar{
     height: 50px;
@@ -89,7 +90,7 @@ div>a{
 }
 .empty{
     height:10px;
-    border:1px solid red
+    
     
 }
 /* #iphonese1{
@@ -131,4 +132,243 @@ div>a{
     
     width:70%;
 }
+
+/* ------------CODA Image------------
+------------------------------------
+====================================
+===================================== */
+/* #coda>img{
+    height:700px;
+    width:100%;  
+} */
+#bigimage{
+    height:600px;
+    color:white;
+    position: relative;
+    background-image: url("https://images.indianexpress.com/2022/03/CODA-movie-1200by667.jpg");
+    background-size: cover;
+    
+}
+#bigimage>div:nth-child(1){
+   
+    text-align: center;
+    padding-top: 30px;
+}
+#bigimage>div:nth-child(1)>p{
+    font-size: 55px;
+}
+#bigimage>div:nth-child(2){
+    height:250px;
+   
+    text-align: center;
+    padding-top: 50px;
+}
+#bigimage>div:last-child{
+    
+    text-align: center;
+    padding-top: 50px;
+}
+#bigimage>div:last-child>p{
+    
+    font-size: 30px;
+}
+/* ===========studio =================
+------------------------------------
+===================================== */
+
+#studio{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap:10px;
+    text-align: center;
+    
+
+}
+#studio>div{
+    background-color: aqua;
+}
+
+#studio>div>a{
+    margin-right: 30px;
+    font-size: 15px;
+    
+}
+#studio>div>a>i{
+    font-size: 12px;
+    margin-left: 7px;
+}
+#monitor>img{
+    
+    width:100%;
+}
+#studio>div>h1{
+    padding-top: 50px;;
+    font-size: 40px;
+}
+#studio>div>p{
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#ipad>img{
+    width:100%;
+}
+#ipadair{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap:10px;
+    justify-content: center;
+    text-align: center;
+    background-color: #f6f6f6;
+    
+}
+#ipadair>div{
+    background-color: red;
+}
+#ipadair>div>h1{
+    padding-top: 50px;;
+    font-size: 40px;
+}
+#ipadair>div>p{
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#ipadair>#air>img{
+    width:100%;
+}
+#ipadair>div>a>i{
+    font-size: 12px;
+    margin-left: 7px;
+}
+#watch{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap:10px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#watch>div{
+    background-color: teal;
+}
+#watch>div>a>i{
+    font-size: 12px;
+    margin-left: 7px;
+    padding-top: 20px;
+}
+#watch>div>h1{
+    padding-top: 50px;
+    font-size: 40px;
+}
+#watch>div>p{
+    font-size: 23px;
+    
+    
+}
+#watch>div>h4{
+    color:#d8585d;
+}
+
+/* ===============text==================
+--------------------------------------
+---------------------------------------- */
+
+#text{
+    background-color: #f5f5f7;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+
+/* ===================footer==================
+===================================
+======================
+================================================= */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1100px;
+    background-color: #f5f5f7;
+    margin: auto;
+    color:#5a5a5c;
+    
+    
+}
+
+.footer{
+    background-color: #f5f5f7;
+    padding:70px 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.rows{
+    display:flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width:20%;
+    padding: 0 15px;
+
+}
+.footer-col>h4{
+    font-size: 16px;
+    
+    
+}
+.footer-col>ul{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.footer-col>ul>li{
+    padding-top: 10px; 
+    text-align: left;  
+}
+.footer-col>ul>li:last-child{
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+    
+}
+.horiline{
+    height:1px;
+    width:100%;
+    border:1px solid #d2d2d7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+#lastline{
+    display:flex;
+    justify-content: space-between;
+}
+#lastline>div{
+    
+}
+#baseflex{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    
+    font-size: 16px;;   
+}
+#baseflex>div{
+    display:flex;
+    justify-content: left;
+}
+.rows>p{
+    font-size: 16px;
+}
+.lastanchor{
+    color:#8bb7e4;
+}
+
 
