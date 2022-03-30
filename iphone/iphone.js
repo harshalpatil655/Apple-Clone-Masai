@@ -84,6 +84,7 @@ nav_data.map(function (elem) {
     var logo = document.createElement('img')
     logo.src = elem.image_url;
     logo.setAttribute('class','logo')
+    
 
     var name = document.createElement('p')
     name.textContent = elem.name;
