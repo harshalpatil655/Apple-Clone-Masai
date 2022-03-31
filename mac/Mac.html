@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+
+#nav {
+    background-color: black;
+    padding: 10px;
+}
+        #navbar{
+    height: 50px;
+    width:100%;
+    background-color: #313132;
+    display:grid;
+    grid-template-columns: repeat(13,80px);
+    grid-template-rows: auto;
+    /* gap:10px; */
+    justify-content: center;
+}
+#navbar>div{
+    
+    /* border:1px solid red; */
+    color:rgb(173, 172, 172);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+/* #padding{
+    padding-top: 0px;
+} */
+nav {
+    background-color: white;
+    margin-left: 70px;
+    /* height: 100px; */
+} 
+
+#con {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 5px;
+    background-color: #fbfbfd;
+
+}
+
+nav+div {
+    height: 30px;
+    
+
+}
+
+nav+div>p {
+    text-align: center;
+    color: #8a8a8c;
+    margin-top: 5px;
+}
+
+.logo{
+    height: 54px;
+}
+#coloring{
+    color: blue;
+}
+#coloring:hover{
+    text-decoration: underline;
+    zoom: 101%;
+}
+#first {
+    width: 60%;
+    margin-left: 140px;
+    margin-top: 35px;
+}
+
+.first_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfbfd;
+    margin-bottom: 20px;
+}
+
+
+.first_img_2nd_div{
+ display: flex;
+ /* border: 1px solid blue; */
+ justify-content:center
+}
+
+.first_2nd_div>a{
+    text-decoration: none;
+}
+
+
+
+/* .first_img>button{
+
+    margin-left: 80px;
+} */
+
+.first_img>div:nth-child(1){
+    margin-top: 60px;
+
+}
+
+.first_img>div>h3{
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 25px;
+    margin-bottom: -10px;
+    color: #f78131;
+}
+
+.first_img>div>h3+h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.first_img>div>h1+h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 54px;
+    margin-bottom: 30px;
+
+}
+.first_img>div>h2+p{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 100px;
+    /* margin-left: 20px; */
+    margin-bottom: 10px;
+
+}
+
+.font{
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+                /* all button color blue a have some boder radius so only target button  */
+  button{
+      border-radius: 20px;
+      background-color: #0071e3;
+      /* height: 40px; */
+      font-size: 10px;
+      width: 78px;
+height: 40px;
+      color: #f5f5f7;
+      border: none;
+     
+      
+  }
+
+  .second_img{
+      width: 100%;
+      /* border: 1px solid red; */
+      background-color: #ffffff;
+      margin-bottom: 20px;
+  }
+
+  .second_img>div:nth-child(1){
+      /* border: 1px solid blue; */
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      margin-top: 50px;
+      line-height: 40px;
+  }
+
+  .second_img>div>h3{
+     
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 25px;
+    margin-bottom: -10px;
+    color: #f78131;
+  }
+
+  .second_img>div>h1{
+      font-size: 50px;
+      margin-left: 35px;
+  }
+  .second_img>div>h1+h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 54px;
+    margin-bottom: 30px;
+
+}
+.second_img>div>h2+p{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 50px;
+    /* margin-left: 20px; */
+    margin-bottom: 10px;
+
+}
+  .second_img_2nd_div{
+      display: flex;
+      justify-content: center;
+      /* border: 1px solid black; */
+      margin-bottom: 15px;
+      margin-top: 15px;
+  }
+
+  .second_img>div:nth-child(2){
+      width: 100%;
+      /* border: 1px solid red; */
+  }
+
+  .second_img>div:nth-child(2)>img{
+      /* width: 50%; */
+      /* border: 1px solid red; */
+      background-size: 548px 422px;
+      margin-left: 500px;
+  }
+  .second{
+    /* margin-right: 100px;
+    padding-right: 500px; */
+    background-color: #fbfbfd;
+    /* border: 1px solid red; */
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+   PADDING-left: 125PX;
+   /* margin-bottom: 50px; */
+}
+
+#container10{
+        /* border: 1px solid red; */
+        color: #6e6e73;
+        width: 1180px;
+        /* height: 1990px; */
+        margin-top: 120px;
+        margin-left: 300px;
+      
+      }
+      #container10>p{
+        margin-bottom: 15px;
+      }
+      #inline{
+        display: flex;
+        /* border: 1px solid red; */
+        width: 300px;
+        height: 10px;
+        font-weight: 100;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        gap: 20px;
+      }
+      #inline>p{
+        margin-top: -2px;
+        margin-left: 15px;
+      } 
+     #color2{
+       color: #6fa2da;
+
+     }
+     .color2:hover{
+ text-decoration: underline;
+ zoom: 101%;
+     }.four{
+    background-color: #fbfbfd;
+}
+.four>h1{
+    text-align: center;
+}
+
+.four>div{
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+
+.four>div>div{
+    width: 25%;
+    /* border: 1px solid green */
+    margin: 10px;
+}
+
+.sub_four{
+    display: block;
+    margin:auto;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.sub{
+    width: 100%;
+}
+
+     .five{
+    border: 1px soid red;
+    width: 100%;
+    /* height: 200px; */
+    background-color: #ffffff;
+}
+
+.five>div{
+    width: 80%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    display: grid;
+    /* height: 600px; */
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: repeat(3,auto);
+     gap: 10px;
+     
+     
+}
+
+.five>div>div{
+    /* border: 1px solid green; */
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    line-height: 30px;
+    /* background-color: #ffffff; */
+}
+
+.five>div>div>h3{
+    font-size: 20px;
+    font-weight: 800;
+   
+}
+
+.five>div>div>p{
+    color: #787879;
+}
+#container{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 450px;
+    display: flex;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div><i id="padding" class="fa-brands fa-apple"></i></div>
+        <div>
+            <p>Store</p>
+        </div>
+        <div>
+            <p>Mac</p>
+        </div>
+        <div>
+            <p>iPad</p>
+        </div>
+        <div>
+            <p>iPhone</p>
+        </div>
+        <div>
+            <p>Watch</p>
+        </div>
+        <div>
+            <p>AirPods</p>
+        </div>
+        <div>
+            <p>TV & Home</p>
+        </div>
+        <div>
+            <p>Only on Apple</p>
+        </div>
+        <div>
+            <p>Accessories</p>
+        </div>
+        <div>
+            <p>Support</p>
+        </div>
+        <div><i  id="padding" class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i  id="padding" class="fa-solid fa-bag-shopping"></i></div>
+    </div>
+    <nav>
+        <div id="con">
+          
+        </div>
+    </nav>
+    <div>
+        <p>Get 3% Daily Cash back with Apple Card. And pay for your new Mac over 12 months, <br> interest‑free when you choose to check out with Apple Card Monthly Installments.* <br><span id="coloring">Learn more</span> </p>
+    </div>
+
+    <div class="first_img">
+        <div>
+            <h3  >New</h3>
+            <h1>Mac Studio</h1>
+            <h2>Empower station</h2>
+            <p>From $1999</p>
+            <div class="first_img_2nd_div">
+                <button class="font">buy</button>
+                <a class="font" href="#">learn more</a>
+            </div>
+
+        </div>
+
+        <div>
+            <img id="first"
+                src="https://www.apple.com/v/mac/home/bl/images/overview/hero/mac_studio__c2wojtx43pw2_large.jpg"
+                alt="">
+        </div>
+
+    </div>
+    <div class="second_img">
+        <div>
+            <h3>New</h3>
+            <h1>Studio Display</h1>
+            <h2>A sight to be bold</h2>
+            <p>From $1599</p>
+
+            <div class="second_img_2nd_div">
+                <button class="font">buy</button>
+                <a href="#" class="font">learn more</a>
+            </div>
+        </div>
+
+        <div>
+            <img src="	https://www.apple.com/v/mac/home/bl/images/overview/hero/studio_display__cn9qj5umkwya_large.jpg"
+                alt="">
+        </div>
+
+    </div>
+    <div class="second_img">
+        <div>
+            <h3></h3>
+            <br>
+            <br>
+            <h1>MacBook Pro</h1>
+            <h2>Supercharged for pros</h2>
+            <p>From $1999</p>
+
+            <div class="second_img_2nd_div">
+                <button class="font">buy</button>
+                <a href="#" class="font">learn more</a>
+            </div>
+        </div>
+
+        <div>
+            <img  class="second" src="https://www.apple.com/v/mac/home/bl/images/overview/hero/macbook_pro_14_16__dmqm5vr9l7yq_large.jpg"
+                alt="">
+        </div>
+
+    </div>
+    <div>
+        <h1 style="margin-left: 600px;margin-top: 30px;font-weight: 600;margin-bottom: 20px;">Which Mac is right for you? </h1>
+    </div>
+    <div style="display: flex; gap: 30px;margin-left: 700px;margin-top: 55px;margin-bottom: 50px;">
+        <h2 style="font-weight: 400;">NoteBook <hr></h2>
+        <h2 style="font-weight: 400;color: #6e6e73;">Desktop <hr></h2>
+        
+    </div>
+    <div class="four">
+        <!-- <h1>Which iPhone is right for you?</h1> -->
+        <div>
+            <div>
+                <img class="sub_four sub"
+                    src="https://www.apple.com/v/mac/home/bl/images/overview/compare/compare_mba__fchj615oz0yi_large.png"
+                    alt="">
+
+                <br>
+
+                <img class="sub_four"
+                    src="https://www.apple.com/v/iphone/home/be/images/overview/compare/swatch_iphone_13_pro__dwe0m1kjylsi_large_2x.png"
+                    alt="">
+                <p class="sub_four">New</p>
+                <h3 class="sub_four">Mac pro</h3>
+                <p class="sub_four">From $999.00</p>
+                <p class="sub_four"></p>
+                <button class="sub_four">buy</button>
+                <a href="#" class="sub_four">Learn more</a>
+                <hr>
+            </div>
+
+
+            <div>
+                <div>
+                    <img class="sub_four sub"
+                        src="https://www.apple.com/v/mac/home/bl/images/overview/compare/compare_mba__fchj615oz0yi_large.png"
+                        alt="">
+
+                    <br>
+
+                    <img class="sub_four"
+                        src="https://www.apple.com/v/iphone/home/be/images/overview/compare/swatch_iphone_13_pro__dwe0m1kjylsi_large_2x.png"
+                        alt="">
+                    <p class="sub_four">New</p>
+                    <h3 class="sub_four">Macbook Ultra pro</h3>
+                    <p class="sub_four">From $1299.00</p>
+                <p class="sub_four"></p>
+                    <button class="sub_four">buy</button>
+                    <a href="#" class="sub_four">Learn more</a>
+                    <hr>
+                </div>
+
+            </div>
+
+            <div>
+                <div>
+                    <img class="sub_four sub"
+                        src="https://www.apple.com/v/macbook-pro/ac/images/overview/compare/compare_mbp16__b991itovw9py_large.png"
+                        alt="">
+
+                    <br>
+
+                    <img class="sub_four"
+                        src="https://www.apple.com/v/iphone/home/be/images/overview/compare/swatch_iphone_13_pro__dwe0m1kjylsi_large_2x.png"
+                        alt="">
+                    <p class="sub_four">New</p>
+                    <h3 class="sub_four">mac+ pro</h3>
+                    <p class="sub_four">From $1999.00</p>
+                    <p class="sub_four"></p>
+                    <button class="sub_four">buy</button>
+                    <a href="#" class="sub_four">Learn more</a>
+                    <hr>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="sub_four sub"
+                        src="https://www.apple.com/v/macbook-pro/ac/images/overview/compare/compare_mbp16__b991itovw9py_large.png"
+                        alt="">
+
+                    <br>
+
+                    <img class="sub_four"
+                        src="https://www.apple.com/v/iphone/home/be/images/overview/compare/swatch_iphone_13_pro__dwe0m1kjylsi_large_2x.png"
+                        alt="">
+                    <p class="sub_four">New</p>
+                    <h3 class="sub_four">iMac pro</h3>
+                    <p class="sub_four">From $2199.00</p>
+                <p class="sub_four"></p>
+                    <button class="sub_four">buy</button>
+                    <a href="#" class="sub_four">Learn more</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="five">
+        <div>
+
+            <div>
+                <h3>6.7″ or 6.1”</h3>
+                <p>All-screen OLED display<sup>2</sup></p>
+                <p>with ProMotion</p>
+            </div>
+
+            <div>
+                <h3>6.7″ or 6.1”</h3>
+                <p>All-screen OLED display<sup>2</sup></p>
+                <p>with ProMotion</p>
+            </div>
+
+            <div>
+                <h3>6.7″ or 6.1”</h3>
+                <p>All-screen OLED display<sup>2</sup></p>
+                <p>with ProMotion</p>
+            </div>
+
+            <div>
+                <h3>6.7″ or 6.1”</h3>
+                <p>All-screen OLED display<sup>2</sup></p>
+                <p>with ProMotion</p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_13_pro_camera__fonn9igfi7qm_large.png"
+                    alt="">
+                <p>Pro camera system</p>
+                <p>Telephoto, Wide, Ultra Wide</p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_13_pro_camera__fonn9igfi7qm_large.png"
+                    alt="">
+                <p>Pro camera system</p>
+                <p>Telephoto, Wide, Ultra Wide</p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_13_pro_camera__fonn9igfi7qm_large.png"
+                    alt="">
+                <p>Pro camera system</p>
+                <p>Telephoto, Wide, Ultra Wide</p>
+            </div>
+
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_13_pro_camera__fonn9igfi7qm_large.png"
+                    alt="">
+                <p>Pro camera system</p>
+                <p>Telephoto, Wide, Ultra Wide</p>
+            </div>
+
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_a15__gde9u4vunqqa_large.png"
+                    alt="">
+                <p>A15 Bionic chip</p>
+                <p>4‑core GPU</p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_a15__gde9u4vunqqa_large.png"
+                    alt="">
+                <p>A15 Bionic chip</p>
+                <p>4‑core GPU</p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_a15__gde9u4vunqqa_large.png"
+                    alt="">
+                <p>A15 Bionic chip</p>
+                <p>4‑core GPU</p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_a15__gde9u4vunqqa_large.png"
+                    alt="">
+                <p>A15 Bionic chip</p>
+                <p>4‑core GPU</p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_5g__f6zugtbm15ua_large.png"
+                    alt="">
+                <p>5G cellular<sup>3</sup></p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_5g__f6zugtbm15ua_large.png"
+                    alt="">
+                <p>5G cellular<sup>3</sup></p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_5g__f6zugtbm15ua_large.png"
+                    alt="">
+                <p>5G cellular<sup>3</sup></p>
+            </div>
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_5g__f6zugtbm15ua_large.png"
+                    alt="">
+                <p>5G cellular<sup>3</sup></p>
+            </div>
+
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_battery__wqowcbwj50y2_large.png"
+                    alt="">
+                <p>Up to 15 hours video</p>
+                <p>playback <sup>4</sup></p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_battery__wqowcbwj50y2_large.png"
+                    alt="">
+                <p>Up to 15 hours video</p>
+                <p>playback <sup>4</sup></p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_battery__wqowcbwj50y2_large.png"
+                    alt="">
+                <p>Up to 15 hours video</p>
+                <p>playback <sup>4</sup></p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_battery__wqowcbwj50y2_large.png"
+                    alt="">
+                <p>Up to 15 hours video</p>
+                <p>playback <sup>4</sup></p>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_touch_id__etlcbgeryay6_large.png"
+                    alt="">
+                <p>Touch ID</p>
+                <hr>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_touch_id__etlcbgeryay6_large.png"
+                    alt="">
+                <p>Touch ID</p>
+                <hr>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_touch_id__etlcbgeryay6_large.png"
+                    alt="">
+                <p>Touch ID</p>
+                <hr>
+            </div>
+
+            <div>
+                <img src="https://www.apple.com/v/iphone/home/be/images/overview/compare/icon_touch_id__etlcbgeryay6_large.png"
+                    alt="">
+                <p>Touch ID</p>
+                <hr>
+            </div>
+
+        </div>
+    </div>
+
+<div id="container">
+<div style="margin-left:300px;margin-top:100px;">
+<h1>Get 3% <br>Daily Cash back <br>with Apple Card.</h1>
+<h3 style="font-weight: 300;">
+    And pay for your new Mac over <br> 12 months, interest-free when <br>you choose to check out with <br>Apple Card monthly Installments.* <br><span style="color: blue;margin-left: 50px;">learn more <span style="color: blue;"><i class="fa-solid fa-angle-right"></i></span></span>
+</h3>
+</div>
+<div>
+    <img src="https://www.apple.com/v/mac/home/bl/images/overview/retail/acmi__e6hmokx3ap0m_large.jpg" alt="">
+</div>
+
+
+
+</div>
+
+  
+   <div id="container10">
+    <p>* Pricing for iPhone 13 and iPhone 13 mini includes a $30 carrier instant discount that requires activation with AT&T, T-Mobile, Sprint, or Verizon. Available to qualified customers and requires 24-month installment loan when you select Citizens One or Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple. iPhone activation required with AT&T, T-Mobile, Sprint, or Verizon for purchases made with ACMI at an Apple Store. Subject to credit approval and credit limit. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. Additional Apple Card Monthly Installments terms are in the Apple Card Customer Agreement. Additional iPhone Payments terms are here. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount.</p>
+    <p>** Offer is available for new subscribers who connect an eligible device to an Apple device running iOS 15 or iPadOS 15 or later, for a limited time only. Offer good for 3 months after eligible device pairing. Plan automatically renews at your region’s price per month until cancelled. No purchase necessary for current owners of eligible devices. Service availability varies by region. Restrictions and other terms apply.</p>
+    <p>◊ Apple Card Monthly Installments (ACMI) is a 0% APR payment option available to select at checkout for certain Apple products purchased at Apple Store locations, apple.com(Opens in a new window), the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See https://support.apple.com/kb/HT211204(Opens in a new window) for more information about eligible products. Variable APRs for Apple Card other than ACMI range from 10.99% to 21.99% based on creditworthiness. Rates as of April 1, 2020. If you choose the pay-in-full or one-time-payment option for an ACMI eligible purchase instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable APR assigned to your Apple Card. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the Apple Card Customer Agreement(Opens in a new window) for more information. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. iPhone activation required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Sprint, Verizon, or T-Mobile.</p>
+    <p>† Monthly pricing is available when you select Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple, and is subject to credit approval and credit limit. Financing terms vary by product. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the Apple Card Customer Agreement for more information. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount.</p>
+    <p>To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.</p>
+    <p>Available for qualifying applicants in the United States.
+    <br> Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
+    <p><span id="color"> 1. AT&T Special Deal: </span>  Offer pricing will reflect application of AT&T trade‑in credit applied over 36 months after trade‑in of eligible smartphone. Requires upgrade of an existing line or activation of a new line and purchase of a new iPhone 13 mini, iPhone 13, iPhone 13 Pro, or iPhone 13 Pro Max on qualifying 36‑month 0% APR installment plan, subject to carrier credit qualification. AT&T Installment Plan with Next Up is not eligible for this promotion. $0 down for well-qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. Requires activation on eligible unlimited plan. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $30. Trade‑in device may not be on existing installment plan. Bill credits are applied as a monthly credit over the 36‑month installment plan. Credits start within 3 bills. Will receive catch‑up credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited‑time offer; subject to change. Limits: one trade‑in per qualifying purchase and one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Price for iPhone 13 and iPhone 13 mini includes $30 AT&T instant discount. Activation required.</p>
+    <p> <span id="color">T-Mobile/Sprint Special Deal:</span> Buy an iPhone 13 Series or iPhone 12 series and trade in a qualifying device (iPhone X, iPhone XS, iPhone XS Max, iPhone XR, iPhone 11, iPhone 11 Pro, iPhone 11 Pro Max, iPhone 12, iPhone 12 mini, iPhone 12 Pro, and iPhone 12 Pro Max) to receive (i) Apple instant trade-in credit and (ii) an additional $200 back in bill credits on your T-Mobile/Sprint rate plan. Bill credits will be applied over 24 months toward your rate plan charges; must be active and in good standing to receive credits; allow 2 bill cycles from valid submission and validation of trade in. Tax on pre-credit price due at sale. Limited-time offer; subject to change. Qualifying credit, service, and trade-in in good condition required. T-Mobile/Sprint in stores and on customer service calls, $30 assisted or upgrade support charge may be required. Max 4/account. May not be combinable with some offers or discounts. Price for iPhone 13, iPhone 13 mini, iPhone 12, and iPhone 12 mini includes $30 T-Mobile/Sprint instant discount. Activation required.  </p>
+    <p><span id="color">Verizon Special Deal:</span> Offer pricing will reflect application of Verizon's trade-in credit up to $440 (iPhone 13, iPhone 13 Pro, and iPhone 13 Pro Max) or $412 (iPhone 13 mini) or $425 (iPhone 12) or $375 (iPhone 12 mini) after trade-in of eligible smartphone. Savings comprised of (i) Apple instant trade-in credit at checkout and (il) Verizon monthly bill credits applied over 36 months. Customer must remain in the Verizon Device Payment Program for 36 months to receive the full benefit of the Verizon bill credits. Bill credits may take 1-2 bill cycles to appear. If it takes two cycles for bill credits to appear, you'll see the credit for the first cycle on your second bill in addition to that month's credit. Requires purchase and activation of a new iPhone 12 mini, iPhone 12, iPhone 13 mini, iPhone 13, iPhone 13 Pro, or iPhone 13 Pro Max with the Verizon Device Payment Program at 0% APR for 36 months, subject to carrier credit qualification, and iPhone availability and limits. Taxes and shipping not included in monthly price. Sales tax may be assessed on full value of new iPhone. Requires eligible unlimited service plan. Requires trade-in of eligible device in eligible condition. Must be at least 18 to trade-in. Apple or its trade-in partners reserve the right to refuse or limit any trade-in transaction for any reason. In-store trade-in requires presentation of a valid. government-issued photo ID (local law may require saving this information). In-store promotion availability subject to local law; speak to a Specialist to learn more. Limited- time offer; subject to change. Additional terms from Apple, Verizon, and Apple's trade-in partners may apply. Price for iPhone 12 mini, iPhone 12, iPhone 13 mini, and iPhone 13 includes $30 Verizon instant discount. Activation required.</p>
+    <p>2. Special pricing available to qualified customers. To learn more about how to start qualifying toward special pricing, talk to an Apple Specialist in a store or give us a call at 1‑800‑MY‑APPLE.</p>
+    <p></p>
+    <p></p>
+    <p>†† We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to Apple.
+      </p>
+      <hr></hr>
+      <div id="inline">
+        <i class="fa-brands fa-apple"></i> 
+        <i id="'pp" class="fa-solid fa-chevron-right"></i>
+       <p>Mac</p>
+      </div>
+      <hr>
+      <p>Shop and Learn</p>
+      <hr>
+      <p>Apple store</p>
+      <hr>
+      <p>For Education</p>
+      <hr>
+      <p>For Business</p>
+      <hr>
+      <p>Government</p>
+      <hr>
+      <p>For Healthcare</p>
+      <hr>
+      <p>Apple Values</p>
+      <hr>
+      <p>Account</p>
+      <hr>
+      <p>About Apple</p>
+      <hr>
+      <p>More ways to shop:<span  id="color2"> Find an Apple Store </span>or<span id="color2">  other retailer</span> near you. Or call 1‑800‑MY‑APPLE.</p>
+    <p>United States</p>
+    <p>Copyright © 2022 Apple Inc. All rights reserved</p>
+    <p>Privacy policy |  Terms of Use | Sales and Refunds | Legal | Site Map</p>
+    </div>
+    
+
+</body>
+</html>
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+crossorigin="anonymous"></script>
+<script>
+var nav_data = [{
+    image_url: "	https://www.apple.com/v/mac/home/bl/images/familybrowser/macbookair_light__f0o95rwae8ae_large.svg",
+    name: 'MacBook Air',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/mac/home/bl/images/familybrowser/macbook_pro_light__e791sjqzt32a_large.svg",
+    name: 'MacBook Pro',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/mac/home/bl/images/familybrowser/imac_24_light__colyztscbeeu_large.svg",
+    name: 'iMac 24 ',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/mac/home/bl/images/familybrowser/mac_mini_light__frtahmzmd4mm_large.svg",
+    name: 'Mac mini',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/mac/home/bl/images/familybrowser/mac_studio_light__ea3pb1auizu6_large.svg",
+    name: 'Mac Studio',
+    status: "New"
+},
+
+{
+    image_url: "https://www.apple.com/v/mac/home/bl/images/familybrowser/mac_pro_light__cj4dvg7thx5y_large.svg",
+    name: 'Mac Pro',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/mac/home/bl/images/familybrowser/mac_compare_light__emml1umdv9m6_large.svg",
+    name: 'Compare',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/mac/home/bl/images/familybrowser/displays_light__ewxqx5obdxci_large.svg",
+    name: 'Displays',
+    status: "New"
+},
+
+{
+    image_url: "https://th.bing.com/th/id/OIP.bKghwXvxswZ3Au0N-zUiXQHaGF?w=219&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7",
+    name: 'Accessories',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/mac/home/bl/images/familybrowser/mac_os_light__d0zczt34scq6_large.svg",
+    name: 'Monterey',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/mac/home/bl/images/familybrowser/mac_shop_light__layuggud1xe2_large.svg",
+    name: 'Shop Mac',
+    status: ""
+},
+
+
+];
+
+
+
+nav_data.map(function (elem) {
+    var card = document.createElement('div')
+
+    var logo = document.createElement('img')
+    logo.src = elem.image_url;
+    logo.setAttribute('class','logo')
+    
+
+    var name = document.createElement('p')
+    name.textContent = elem.name;
+
+    var status = document.createElement('p')
+    status.textContent = elem.status;
+    status.style.color='#f78131'
+    // console.log(logo,name,status)
+    card.append(logo, name, status)
+
+    document.querySelector('#con').append(card)
+})
+</script>
