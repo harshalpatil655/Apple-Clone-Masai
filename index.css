@@ -82,7 +82,7 @@ div>a{
     
 }
 #iphone13link>a{
-    margin-right: 70px;
+    margin-right: 20px;
 }
 #iphone13link>a>i{
     
@@ -431,9 +431,7 @@ ul{
     display:flex;
     justify-content: space-between;
 }
-#lastline>div{
-    
-}
+
 #baseflex{
     display:grid;
     grid-template-columns: repeat(5,1fr);
