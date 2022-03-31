@@ -1,0 +1,58 @@
+
+#navbar{
+    height: 50px;
+    width:100%;
+    background-color: #313132;
+    display:grid;
+    grid-template-columns: repeat(13,80px);
+    grid-template-rows: auto;
+    /* gap:10px; */
+    justify-content: center;
+}
+#navbar>div{
+    
+    /* border:1px solid red; */
+    color:rgb(173, 172, 172);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+
+
+
+
+/* 
+#nav>ul>li {
+    color: white;
+    display: inline-block;
+    justify-content: space-around;
+
+} */
+
+/* now i will take nav tag previous nav was nav id */
+nav {
+    background-color: white;
+} 
+
+#con {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 5px;
+    background-color: #fbfbfd;
+
+}
+
+nav+div {
+    height: 30px;
+    
+
+}
+
+nav+div>p {
+    text-align: center;
+    color: #8a8a8c;
+    margin-top: 5px;
+}
