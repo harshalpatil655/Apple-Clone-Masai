@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 #navbar{
     height: 50px;
     width:100%;
@@ -31,6 +34,7 @@
 } */
 
 /* now i will take nav tag previous nav was nav id */
+   /*           nav bar start                   */
 nav {
     background-color: white;
 } 
@@ -56,3 +60,270 @@ nav+div>p {
     color: #8a8a8c;
     margin-top: 5px;
 }
+
+/*     nav bar         completed */
+
+/*                      first start                   */
+
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+    width: 100%;
+    height: 80px;
+    /* position: sticky;
+    top: 40px; */
+}
+
+.first>p:nth-child(1){
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.first>p:nth-child(2){
+    font-size: 20px;
+}
+
+/*       first complete */
+
+
+
+/*       second start           */
+
+.second{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.second>div{
+    width: 20%;
+    height: 80%;
+    /* border: 1px solid blue; */
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.second>div>a{
+    text-decoration: none;
+    line-height: 40px;
+    /* color: #3585d6; */
+    
+}
+
+/*       second complete            */
+
+
+
+/*          third start            */
+
+.third{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#img{
+   
+    /* border: 1px solid blue; */
+    width: 40%;
+    height: 70%;
+    
+
+}
+
+#img>img{
+    width: 400px;
+    margin-left: 50px;
+    margin-top: -80px;
+    
+}
+
+#detail{
+    /* border: 1px solid gold; */
+    width: 45%;
+    height: 100%;
+}
+
+#detail>h1{
+    font-size: 40px;
+}
+
+#detail>h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+#detail>p:nth-child(1){
+    color: #bf4800;
+    /* margin-left: 10px; */
+    font-size: 20px;
+}
+
+#detail>#colour{
+    display: block;
+    margin: auto;
+    background-color: #8a8a8c;
+}
+
+#colour+p{
+    font-size: 30px;
+    margin: 10px;
+}
+
+#detail>p:nth-child(2){
+    font-size: 30px;
+}
+
+.capacity{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,100px);
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+
+}
+
+.capacity>div{
+    border: 1px solid green;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+}
+
+
+#checkout{
+    /* border: 1px solid red; */
+    margin-top: -40px;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#checkout>button{
+    font-size: 25px;
+    background-color: aqua;
+    /* border: none; */
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #313132;
+}
+
+/*               third complete             */
+
+
+
+
+
+
+/*                               copy from iphone.html                                */
+
+
+
+
+    /* four */
+
+.four{
+    background-color: #fbfbfd;
+}
+.four>h1{
+    text-align: center;
+}
+
+.four>div{
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+
+.four>div>div{
+    width: 25%;
+    /* border: 1px solid green */
+    margin: 10px;
+}
+
+.sub_four{
+    display: block;
+    margin:auto;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.sub{
+    width: 100%;
+}
+ /*   four end  */
+
+ /*   five start   */
+ .five{
+    /* border: 1px soid red; */
+    width: 100%;
+    /* height: 200px; */
+    background-color: #ffffff;
+}
+
+.five>div{
+    width: 80%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    display: grid;
+    /* height: 600px; */
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: repeat(3,auto);
+     gap: 10px;
+     
+     
+}
+
+.five>div>div{
+    /* border: 1px solid green; */
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    line-height: 30px;
+    /* background-color: #ffffff; */
+}
+
+.five>div>div>h3{
+    font-size: 20px;
+    font-weight: 800;
+   
+}
+
+.five>div>div>p{
+    color: #787879;
+}
+
+/*  five end */
+  /*                      copy from iphone.html  end                              */
+
+
+
+
+
+
+
+
+
+
+
+
+
