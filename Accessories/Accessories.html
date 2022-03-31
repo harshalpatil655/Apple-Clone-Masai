@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+
+#nav {
+    background-color: black;
+    padding: 10px;
+}
+        #navbar{
+    height: 50px;
+    width:100%;
+    background-color: #313132;
+    display:grid;
+    grid-template-columns: repeat(13,80px);
+    grid-template-rows: auto;
+    /* gap:10px; */
+    justify-content: center;
+}
+#navbar>div{
+    
+    /* border:1px solid red; */
+    color:rgb(173, 172, 172);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+#container{
+width: 100%;
+height: 50px;
+/* border: 1px solid red; */
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+display: flex;
+color: #313132;
+justify-content: space-between;
+backface-visibility: visible;
+background-blend-mode: lighten;
+}
+#container>div{
+   margin: 10px 70px 10px  ;
+    font-size: medium;
+    
+   
+}
+#container>div>h2{
+    font-weight: 300;
+}
+#browse{
+    color: #000;
+    border: none;
+    background-color: #f5f5f7;
+}
+#container1{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 0350px;
+}
+#img{
+    /* border: 1px solid red;   */
+    width: 100%;
+    height: 100%;
+}
+#container1>div{
+    /* border: 1px solid black;   */
+    width: 50%;
+}
+#div{
+    /* border: 1px solid black;   */
+    margin-left: 100px;
+}
+#container1>div >H1{
+    font-weight: 600;
+    margin: 80px 80px;
+    margin-bottom: 5px;
+    
+    
+}#container1>div >H2{
+    font-weight: 600;
+    margin: 0px 80px;
+    margin-bottom: 5px;
+    
+}
+#div+div{
+    margin-right: 150px;
+}
+#shift{
+   width: 100px;
+   height: 100px;
+   border-radius: 85px ;
+   border: 1px solid gray;
+   justify-content: center;
+   padding-top: 25px;
+   padding-left: 25px;
+   font-size: large;
+   font-weight: 100; display: block;
+   margin-bottom: 25px;
+}
+#container2 {
+    /* border: 1px solid red; */
+    margin-left: 50px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+    color: black;
+    margin-left: 200px;
+    /* font-weight: 700; */
+    padding-bottom: 50px;
+   
+    font-size: xx-large;
+    grid-template:
+        "a b b"
+        "c d e";
+}
+.a {
+    /* background-color: #444444; */
+    padding-top: 15px;
+    border-radius: 5px;
+    padding-left: 20px;
+    /* height: 70px; */
+    grid-area: a;
+    height: 670PX;
+    width: 332px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    background-color: #e9e9e9;
+    border-radius: 25px;
+   
+}
+.a>p,.b>p,.c>p,.d>p,.e>p{
+    font-size: medium;
+    text-align: center;
+    color:chocolate;
+    margin-bottom: 25px;
+}
+.a>img,.b>img,.c>img,.d>img,.e>img{
+    align-items: center;
+    margin-left: 25px;
+    margin-bottom: 95px;
+}
+.b {
+    /* background-color: #444444; */
+    padding-left: 20px;
+    border-radius: 5px;
+    /* height: 70px; */
+    height: 670PX;
+    width: 705px;
+    padding-top: 15px;
+    display: inline-block;
+    background-color: #e9e9e9;
+    border-radius: 25px;
+    /* border: 1px solid black; */
+    grid-area: b;
+}
+.c {
+    /* background-color: #444444; */
+    padding-left: 20px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    /* height: 70px; */
+    height: 670PX;
+    width: 332px;
+    background-color: #e9e9e9;
+    border-radius: 25px;
+    padding-top: 15px;
+    display: inline-block;
+    grid-area: c;
+}
+.d {
+    /* background-color: #444444; */
+    padding-left: 20px;
+    border-radius: 5px;
+    /* height: 70px; */
+    padding-top: 15px;
+    height: 670PX;
+    width: 332px;
+    display: inline-block;
+    background-color: #e9e9e9;
+    border-radius: 25px;
+    grid-area: d;
+    /* border: 1px solid black; */
+}
+.e {
+    /* background-color: #444444; */
+    padding-left: 20px;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    /* height: 70px; */
+    height: 670PX;
+    width: 332px;
+    display: inline-block;
+    padding-top: 15px;
+    grid-area: e;
+    background-color: #e9e9e9;
+    border-radius: 25px;
+}
+h6{
+    font-weight: 400;
+    margin-left: 50px;
+}
+h6:hover{
+    color: blue;
+}
+#first {
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 35px;
+}
+
+.first_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfbfd;
+    margin-bottom: 20px;
+}
+
+
+.first_img_2nd_div{
+ display: flex;
+ /* border: 1px solid blue; */
+ justify-content:center
+}
+
+.first_2nd_div>a{
+    text-decoration: none;
+}
+
+
+
+/* .first_img>button{
+
+    margin-left: 80px;
+} */
+
+.first_img>div:nth-child(1){
+    margin-top: 60px;
+
+}
+
+.first_img>div>h3{
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 25px;
+    margin-bottom: -10px;
+    color: #f78131;
+}
+
+.first_img>div>h3+h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.first_img>div>h1+h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 54px;
+    margin-bottom: 30px;
+
+}
+.first_img>div>h2+p{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 100px;
+    /* margin-left: 20px; */
+    margin-bottom: 10px;
+
+}
+
+.font{
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+                /* all button color blue a have some boder radius so only target button  */
+  button{
+      border-radius: 20px;
+      background-color: #0071e3;
+      /* height: 40px; */
+      font-size: 10px;
+      width: 78px;
+height: 40px;
+      color: #f5f5f7;
+      border: none;
+     
+      
+  }
+#container10{
+        /* border: 1px solid red; */
+        color: #6e6e73;
+        width: 1180px;
+        /* height: 1990px; */
+        margin-top: 120px;
+        margin-left: 300px;
+      
+      }
+      #container10>p{
+        margin-bottom: 15px;
+      }
+      #inline{
+        display: flex;
+        /* border: 1px solid red; */
+        width: 300px;
+        height: 10px;
+        font-weight: 100;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        gap: 20px;
+      }
+      #inline>p{
+        margin-top: -2px;
+        margin-left: 15px;
+      } 
+     #color2{
+       color: #6fa2da;
+
+     }
+     .color2:hover{
+ text-decoration: underline;
+ zoom: 101%;
+     }
+    </style>
+</head>
+<body>
+     <div id="navbar">
+        <div><i id="padding" class="fa-brands fa-apple"></i></div>
+        <div>
+            <p>Store</p>
+        </div>
+        <div>
+            <p>Mac</p>
+        </div>
+        <div>
+            <p>iPad</p>
+        </div>
+        <div>
+            <p>iPhone</p>
+        </div>
+        <div>
+            <p>Watch</p>
+        </div>
+        <div>
+            <p>AirPods</p>
+        </div>
+        <div>
+            <p>TV & Home</p>
+        </div>
+        <div>
+            <p>Only on Apple</p>
+        </div>
+        <div>
+            <p>Accessories</p>
+        </div>
+        <div>
+            <p>Support</p>
+        </div>
+        <div><i  id="padding" class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i  id="padding" class="fa-solid fa-bag-shopping"></i></div>
+    </div>
+<div id="container">
+    <div><h2 style="font-size: large;">Asseccories</h2></div>
+    <div style="display: flex;padding-bottom: 30px;"><h3 style="font-weight: 200px;font-size: small;color: #494747;">browse All</h3>
+        <select name="browse All" id="browse">
+        <option value=""></option>
+        <option value=""></option>
+    </select></div>
+    
+</div>
+<div id="container1">
+    <div id="div">
+<h1>Mix.Match. <br>MagSafe.</h1>
+<h2 style="font-weight: 200;">Snap on a case, wallet, wireless <br> charger, or battery pack.
+<br>
+<br>
+  <span style="color: blue;">Shop MagSafe</span>    <span style="color: rgb(95, 95, 250);">    <i class="fa-solid fa-angle-right"></i>
+    </span></h2>
+    </div>
+    <div >
+        <img id="img"  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/magsafe-202203?wid=1440&hei=480&fmt=jpeg&qlt=95&.v=1644980568536" alt="">
+    </div>
+</div>
+
+<div style="display: flex;gap: 30px;margin-left: 700px;">
+    <div><i class="fa-solid fa-circle"></i></div>
+    <div><i style="color: #727070;" class="fa-solid fa-circle"></i></div>
+    <div><i style="color: #7a7878;margin-bottom: 50px;"  class="fa-solid fa-circle"></i></div>
+</div>
+<h1 style="font-weight: 600;margin-left: 500px;font-size: xx-large;margin-bottom: 25px;">Find the accessories you’re looking for.</h1>
+<input style="font-family: FontAwesome;width: 500px;height: 35px;margin-left: 500px;padding-left: 20px;border-radius: 10px;margin-bottom: 50px;" placeholder='&#xf002 Search Asseccories' />
+<div>
+<div style="display: flex;gap: 20px;">
+  <div style="font-size: larger;margin-left: 600px;">Browse by product</div>
+    <div style="font-size: larger;margin-left: 50px;margin-bottom: 25px; border-bottom: 1px solid grey;padding-bottom: 28px;">Browse by Category</div>
+</div> 
+<div style="margin-top: -23px;">
+    <hr width="70%" style="margin-left :200px;">
+</div>
+</div>
+<div style="display: flex;gap: 40px;margin-left:300px ;margin-top: 50px;">
+   <div > <div id="shift">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/icon-product-mac?wid=75&hei=75&fmt=png-alpha&.v=1544482382615" alt="">
+    </div>   <h2 style="font-weight: 100;margin-left: 40px;">Mac</h2>
+    </div>
+   <div> <div  id="shift">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/icon-product-ipad?wid=75&hei=75&fmt=png-alpha&.v=1544482382704" alt="">
+    </div>  <h2 style="font-weight: 100;margin-left: 40px;">iPad</h2>
+    </div>
+   <div> <div  id="shift">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/icon-product-iphone?wid=75&hei=75&fmt=png-alpha&.v=1544482382650" alt="">
+    </div>  <h2 style="font-weight: 200;margin-left: 40px;">iPhone</h2>
+    </div>
+  <div>
+      <div  id="shift">
+        <img style="border-radius: 35px solid gray;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/icon-product-watch?wid=75&hei=75&fmt=png-alpha&.v=1544482383418" alt="">
+   
+    </div>    <h2 style="font-weight: 200;margin-left: 40px;">Watch</h2> </div>
+   <div> <div id="shift">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/icon-product-tv?wid=75&hei=75&fmt=png-alpha&.v=1544482382741" alt="">
+    </div>   <h2 style="font-weight: 200;margin-left: 40px; margin-bottom: 50px;">TV & Home</h2>
+    </div>
+</div>
+<hr width="70%" style="margin-left :200px;margin-bottom: 50px;">
+<h1 style="font-weight: 600;margin-left: 600px;font-size: xx-large;margin-bottom: 25px;">Featured Apple Accessories</h1>
+<div id="container2">
+    
+        <div class="a">
+            <img  style="margin-top: 70px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN6H3_FV103?wid=266&hei=291&fmt=png-alpha&.v=164521547810" alt="">
+       <p>New</p>
+       <h6 style="margin-bottom: 55px;">iphone SE Silicon case</h6>
+       
+       <h6 style="margin-left: 135px;color:#727070">$35.00</h6>
+       
+        </div>
+        <div class="b">
+            <img style="height: 391px;margin-left:45px ;width: 615px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN663_FV401?wid=710&hei=465&fmt=png-alpha&.v=1645215016082" alt="">
+            <p>New</p>
+            <h6 style="margin-bottom: 55px; margin-left: 245px;">iphone 13 Pro Silicon case MagSafe</h6>
+            
+            <h6 style="margin-left: 325px;color:#727070">$49.00</h6>
+               
+        
+        </div>
+        <div class="c">
+            <img style="margin-top: 70px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airtag-single-select-202104?wid=266&hei=291&fmt=png-alpha&.v=1617761671000" alt="">
+            <p>Free Engraving</p>
+            <h6 style="margin-bottom: 55px; margin-left: 135px;">AirTag</h6>
+            
+            <h6 style="margin-left: 135px;color:#727070">$29.00</h6>
+            
+      
+        </div>
+        <div class="d">
+            <img style="margin-top: 70px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MN1L3ref_FV531?wid=266&hei=291&fmt=png-alpha&.v=1645138458828" alt="">
+            <p>New</p>
+            <h6 style="margin-bottom: 55px;margin-left: 85px;">Braided Solo Loop</h6>
+            
+            <h6 style="margin-left: 135px;color:#727070">$99.00</h6>
+            
+        
+        </div>
+        <div class="e">
+            <img style="margin-top: 70px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MNA73_FV102?wid=266&hei=291&fmt=png-alpha&.v=1645214428592" alt="">
+            <p>New</p>
+            <h6 style="margin-bottom: 55px;margin-left: 75px;">Smart Folio for iPad Air</h6>
+            
+            <h6 style="margin-left: 135px;color:#727070">$79.00</h6>
+            
+        
+        </div>
+</div>
+<div class="first_img">
+    <div>
+        <h3  >Free Engraving</h3>
+        <h1> AirPods Pro</h1>
+        <h2>Empower station</h2>
+        <p>From $299</p>
+        <div class="first_img_2nd_div">
+            <button class="font">buy</button>
+            <a class="font" href="#">learn more</a>
+        </div>
+
+    </div>
+
+    <div>
+        <img id="first"
+            src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=266&hei=291&fmt=png-alpha&.v=1591634795000"
+            alt="">
+    </div>
+
+</div>
+<div id="container10">
+    <p>* Pricing for iPhone 13 and iPhone 13 mini includes a $30 carrier instant discount that requires activation with AT&T, T-Mobile, Sprint, or Verizon. Available to qualified customers and requires 24-month installment loan when you select Citizens One or Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple. iPhone activation required with AT&T, T-Mobile, Sprint, or Verizon for purchases made with ACMI at an Apple Store. Subject to credit approval and credit limit. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. Additional Apple Card Monthly Installments terms are in the Apple Card Customer Agreement. Additional iPhone Payments terms are here. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount.</p>
+    <p>** Offer is available for new subscribers who connect an eligible device to an Apple device running iOS 15 or iPadOS 15 or later, for a limited time only. Offer good for 3 months after eligible device pairing. Plan automatically renews at your region’s price per month until cancelled. No purchase necessary for current owners of eligible devices. Service availability varies by region. Restrictions and other terms apply.</p>
+    <p>◊ Apple Card Monthly Installments (ACMI) is a 0% APR payment option available to select at checkout for certain Apple products purchased at Apple Store locations, apple.com(Opens in a new window), the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See https://support.apple.com/kb/HT211204(Opens in a new window) for more information about eligible products. Variable APRs for Apple Card other than ACMI range from 10.99% to 21.99% based on creditworthiness. Rates as of April 1, 2020. If you choose the pay-in-full or one-time-payment option for an ACMI eligible purchase instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable APR assigned to your Apple Card. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the Apple Card Customer Agreement(Opens in a new window) for more information. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. iPhone activation required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Sprint, Verizon, or T-Mobile.</p>
+    <p>† Monthly pricing is available when you select Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple, and is subject to credit approval and credit limit. Financing terms vary by product. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the Apple Card Customer Agreement for more information. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount.</p>
+    <p>To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.</p>
+    <p>Available for qualifying applicants in the United States.
+    <br> Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
+    <p><span id="color"> 1. AT&T Special Deal: </span>  Offer pricing will reflect application of AT&T trade‑in credit applied over 36 months after trade‑in of eligible smartphone. Requires upgrade of an existing line or activation of a new line and purchase of a new iPhone 13 mini, iPhone 13, iPhone 13 Pro, or iPhone 13 Pro Max on qualifying 36‑month 0% APR installment plan, subject to carrier credit qualification. AT&T Installment Plan with Next Up is not eligible for this promotion. $0 down for well-qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. Requires activation on eligible unlimited plan. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $30. Trade‑in device may not be on existing installment plan. Bill credits are applied as a monthly credit over the 36‑month installment plan. Credits start within 3 bills. Will receive catch‑up credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited‑time offer; subject to change. Limits: one trade‑in per qualifying purchase and one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Price for iPhone 13 and iPhone 13 mini includes $30 AT&T instant discount. Activation required.</p>
+    <p> <span id="color">T-Mobile/Sprint Special Deal:</span> Buy an iPhone 13 Series or iPhone 12 series and trade in a qualifying device (iPhone X, iPhone XS, iPhone XS Max, iPhone XR, iPhone 11, iPhone 11 Pro, iPhone 11 Pro Max, iPhone 12, iPhone 12 mini, iPhone 12 Pro, and iPhone 12 Pro Max) to receive (i) Apple instant trade-in credit and (ii) an additional $200 back in bill credits on your T-Mobile/Sprint rate plan. Bill credits will be applied over 24 months toward your rate plan charges; must be active and in good standing to receive credits; allow 2 bill cycles from valid submission and validation of trade in. Tax on pre-credit price due at sale. Limited-time offer; subject to change. Qualifying credit, service, and trade-in in good condition required. T-Mobile/Sprint in stores and on customer service calls, $30 assisted or upgrade support charge may be required. Max 4/account. May not be combinable with some offers or discounts. Price for iPhone 13, iPhone 13 mini, iPhone 12, and iPhone 12 mini includes $30 T-Mobile/Sprint instant discount. Activation required.  </p>
+    <p><span id="color">Verizon Special Deal:</span> Offer pricing will reflect application of Verizon's trade-in credit up to $440 (iPhone 13, iPhone 13 Pro, and iPhone 13 Pro Max) or $412 (iPhone 13 mini) or $425 (iPhone 12) or $375 (iPhone 12 mini) after trade-in of eligible smartphone. Savings comprised of (i) Apple instant trade-in credit at checkout and (il) Verizon monthly bill credits applied over 36 months. Customer must remain in the Verizon Device Payment Program for 36 months to receive the full benefit of the Verizon bill credits. Bill credits may take 1-2 bill cycles to appear. If it takes two cycles for bill credits to appear, you'll see the credit for the first cycle on your second bill in addition to that month's credit. Requires purchase and activation of a new iPhone 12 mini, iPhone 12, iPhone 13 mini, iPhone 13, iPhone 13 Pro, or iPhone 13 Pro Max with the Verizon Device Payment Program at 0% APR for 36 months, subject to carrier credit qualification, and iPhone availability and limits. Taxes and shipping not included in monthly price. Sales tax may be assessed on full value of new iPhone. Requires eligible unlimited service plan. Requires trade-in of eligible device in eligible condition. Must be at least 18 to trade-in. Apple or its trade-in partners reserve the right to refuse or limit any trade-in transaction for any reason. In-store trade-in requires presentation of a valid. government-issued photo ID (local law may require saving this information). In-store promotion availability subject to local law; speak to a Specialist to learn more. Limited- time offer; subject to change. Additional terms from Apple, Verizon, and Apple's trade-in partners may apply. Price for iPhone 12 mini, iPhone 12, iPhone 13 mini, and iPhone 13 includes $30 Verizon instant discount. Activation required.</p>
+    <p>2. Special pricing available to qualified customers. To learn more about how to start qualifying toward special pricing, talk to an Apple Specialist in a store or give us a call at 1‑800‑MY‑APPLE.</p>
+    <p></p>
+    <p></p>
+    <p>†† We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to Apple.
+      </p>
+      <hr></hr>
+      <div id="inline">
+        <i class="fa-brands fa-apple"></i> 
+        <i id="'pp" class="fa-solid fa-chevron-right"></i>
+       <p>Accessories</p>
+      </div>
+      <hr>
+      <p>Shop and Learn</p>
+      <hr>
+      <p>Apple store</p>
+      <hr>
+      <p>For Education</p>
+      <hr>
+      <p>For Business</p>
+      <hr>
+      <p>Government</p>
+      <hr>
+      <p>For Healthcare</p>
+      <hr>
+      <p>Apple Values</p>
+      <hr>
+      <p>Account</p>
+      <hr>
+      <p>About Apple</p>
+      <hr>
+      <p>More ways to shop:<span  id="color2"> Find an Apple Store </span>or<span id="color2">  other retailer</span> near you. Or call 1‑800‑MY‑APPLE.</p>
+    <p>United States</p>
+    <p>Copyright © 2022 Apple Inc. All rights reserved</p>
+    <p>Privacy policy |  Terms of Use | Sales and Refunds | Legal | Site Map</p>
+    </div>
+    
+
+
+
+</body>
+</html>
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+crossorigin="anonymous"></script>
