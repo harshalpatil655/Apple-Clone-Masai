@@ -1,102 +1,666 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <style>
-        #topsection{
+        #nav {
+    background-color: black;
+    padding: 10px;
+}
+
+
+#navbar{
+    height: 50px;
+    width:100%;
+    background-color: #313132;
+    display:grid;
+    grid-template-columns: repeat(13,80px);
+    grid-template-rows: auto;
+    /* gap:10px; */
+    justify-content: center;
+}
+#navbar>div{
+    
+    /* border:1px solid red; */
+    color:rgb(173, 172, 172);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+
+
+
+
+/* 
+#nav>ul>li {
+    color: white;
+    display: inline-block;
+    justify-content: space-around;
+
+} */
+
+/* now i will take nav tag previous nav was nav id */
+nav {
+    background-color: white;
+} 
+
+#con {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 5px;
+    background-color: #fbfbfd;
+
+}
+
+nav+div {
+    height: 30px;
+    
+
+}
+
+nav+div>p {
+    text-align: center;
+    color: #8a8a8c;
+    margin-top: 5px;
+}
+        #topsection {
             height: 300px;
             width: 80%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             margin: auto;
         }
-        #topsection>div{
+
+        #topsection>div {
             height: 50px;
             width: 90%;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             margin: auto;
             margin-top: 20px;
             margin-bottom: 50px;
         }
-        button{
-            padding: 10px 70px 15px 70px;
+
+        #button1 {
+            padding: 10px 100px 15px 100px;
             color: white;
             background-color: blue;
+            border-color: blue;
             border-radius: 10px;
             margin-left: 400px;
 
         }
-        #bottomsection{
+
+        #bottomsection {
             height: 500px;
             width: 80%;
-            border: 1px solid green;
+            /* border: 1px solid green; */
             margin: auto;
             display: flex;
         }
-        #div3{
-           height: 450px;
-           width: 200px;
-           border: 1px solid grey; 
-           margin-right: 20px;
-        }
-        
-        #div4{
+
+        #div3 {
             height: 450px;
-           width: 800px;
-           border: 1px solid yellow;
+            width: 200px;
+            /* border: 1px solid grey; */
+            margin-right: 20px;
         }
-        #div4>div{
-            border: 1px solid orange;
+
+        #div4 {
+            height: 450px;
+            width: 800px;
+            /* border: 1px solid yellow; */
+
+        }
+
+        #div5 {
+            /* border: 1px solid orange; */
             display: flex;
             justify-content: space-between;
         }
-        #div4>div>div>h1{
+
+        #div5>div>h1 {
             height: 50px;
             width: 299px;
         }
-        #div5{
-            
-            background-color: red;
+
+        
+
+        #bottomsection1 {
+            height: 300px;
+            width: 61%;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-left: 350px;
+
+        }
+        /* #div6{
+            margin-top: 500px;
+
+        } */
+
+        #div7 {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #div8 {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #recommendations {
+            height: 500px;
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            display: flex;
+        }
+
+        #recommendations>div {
+            margin: auto;
+            /* border: 1px solid blueviolet; */
+            margin-top: 80px;
+        }
+
+        #button2 {
+            background-color: #0077ED;
+            color: white;
+            margin-left: 30px;
+            border-color: #0077ED;
+            padding: 15px 50px 15px 50px;
+            border-radius: 10px;
+
+        }
+        #fresh{
+            height: 500px;
+            width: 80%;
+            margin: auto;
+            /* border: 1px solid maroon; */
+        }
+        #que{
+            display: flex;
+            justify-content: space-around;
+            font-size: larger;
         }
         
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1100px;
+            background-color: #f5f5f7;
+            margin: auto;
+            color: #5a5a5c;
+
+
+        }
+
+        .footer {
+            background-color: #f5f5f7;
+            padding: 70px 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .rows {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            width: 20%;
+            padding: 0 15px;
+
+        }
+
+        .footer-col>h4 {
+            font-size: 16px;
+
+
+        }
+
+        .footer-col>ul {
+            font-size: 16px;
+            padding-top: 10px;
+        }
+
+        .footer-col>ul>li {
+            padding-top: 10px;
+            text-align: left;
+        }
+
+        .footer-col>ul>li:last-child {
+            padding-bottom: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .horiline {
+            height: 1px;
+            width: 100%;
+            border: 1px solid #d2d2d7;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        #lastline {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #baseflex {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            font-size: 16px;
+            ;
+        }
+
+        #baseflex>div {
+            display: flex;
+            justify-content: left;
+        }
+
+        .rows>p {
+            font-size: 16px;
+        }
+
+        .lastanchor {
+            color: #8bb7e4;
+        }
+
     </style>
 </head>
+
 <body>
+    <div id="navbar">
+        <div><i class="fa-brands fa-apple"></i></div>
+        <div>
+            <p>Store</p>
+        </div>
+        <div>
+            <p>Mac</p>
+        </div>
+        <div>
+            <p>iPad</p>
+        </div>
+        <div>
+            <p>iPhone</p>
+        </div>
+        <div>
+            <p>Watch</p>
+        </div>
+        <div>
+            <p>AirPods</p>
+        </div>
+        <div>
+            <p>TV & Home</p>
+        </div>
+        <div>
+            <p>Only on Apple</p>
+        </div>
+        <div>
+            <p>Accessories</p>
+        </div>
+        <div>
+            <p>Support</p>
+        </div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-solid fa-bag-shopping"></i></div>
+    </div>
+
+
+
+
+
+
+    <nav>
+        <div id="con">
+            <!-- <div><img
+                src="https://www.apple.com/v/iphone/home/be/images/chapternav/iphone_13_pro_light__bywz8u012wk2_large.svg"
+                alt="">
+        </div>
+
+        <div>
+            <img src="https://www.apple.com/v/iphone/home/be/images/chapternav/iphone_13_pro_light__bywz8u012wk2_large.svg"
+                alt="">
+        </div> -->
+
+        </div>
+    </nav>
     <div id="topsection">
         <div id="div1">
-            <p>For a limited time, get 3, 6 or 12 months No Cost EMI with qualifying Credit Cards from most leading banks.§</p>
+
+            <p style="margin-left: 100px;">For a limited time, get 3, 6 or 12 months No Cost EMI with qualifying Credit Cards from most leading
+                banks.§</p>
+
         </div>
         <div id="div2">
             <center>
-            <h1>Your bag total is ₹272800.00 or ₹32106.00/mo.</h1></center>
+                <h1>Your bag total is ₹272800.00 or ₹32106.00/mo.</h1>
+            </center>
         </div>
-        <button>Check Out</button>
+        <button id="button1">Check Out</button>
+        <p style="color: gray;">
+            _______________________________________________________________________________________________________________________________________
+        </p>
     </div>
     <div id="bottomsection">
-    <div id="div3">
-        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-green-select?"/>
-    </div>
-    <div id="div4">
-        <div>
-        <div><h1>
-            iPhone 13 Pro 512GB Alpine Green</h1></div>
-        <div>
-            <select></select>
+        <div id="div3">
+            <img
+                src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-green-select?" />
         </div>
-        <div><h1>₹149900.00</h1></div>
-    </div>
-        <div id="div5">
-            <h3>Add AppleCare+ for iPhone 13 Pro for ₹26900.00</h3>
-            <ul>
-                <li>Priority access to Apple experts</li>
-                <li>Apple-certified repairs using genuine Apple parts</li>
-                <li>Coverage for iPhone, including the battery</li>
-                <li>Accidental damage protection</li>
-            </ul>
+        <div id="div4">
+            <div id="div5">
+                <div>
+                    <h1>
+                        iPhone 13 Pro 512GB Alpine Green</h1>
+                    <p style="color: gray; margin: 10px 0px 20px 0px;">__________________________________________________________________________
+                    </p>
+                </div>
+                <div>
+                    <select name="1" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                    <!-- <p>__________________</p> -->
+                </div>
+                <div>
+                    <h1>₹149900.00</h1>
+                    <p style="color: gray; margin: 10px 0px 20px -50px;">____________________________</p>
+                </div>
+
+            </div>
+            <div id="div6">
+                <h3 style="margin:-5px 0px 0px 0px;">Add AppleCare+ for iPhone 13 Pro for ₹26900.00</h3>
+                <h2 style="margin-left: 750px; color: blue; margin-top: 0px; ">Add</h2>
+                <ul>
+                    <li>Priority access to Apple experts</li>
+                    <li>Apple-certified repairs using genuine Apple parts</li>
+                    <li>Coverage for iPhone, including the battery</li>
+                    <li>Accidental damage protection</li>
+                </ul>
+                <a href="">Learn more</a>
+                <p style="color: gray;">
+                    ____________________________________________________________________________________________________
+                </p>
+
+            </div>
+            <div>
+                <h3>Add a gift message or gift wrap</h3>
+                <h2 style="margin-left: 750px; color: blue; margin-top: 0px; ">Add</h2>
+                <p style="color: gray;">
+                    ____________________________________________________________________________________________________
+                </p>
+
+            </div>
+            <div>
+                <h3>Find out how soon you can get this item.</h3>
+                <h3 style="margin-left: 325px; color: blue; margin-top: -20px; ">Enter pin code <i
+                        class="fa-solid fa-angle-down"></i></h3>
+                <p style="margin-left: 20px;">In stock and ready to ship.</p>
+                <p style="color: gray; margin-top: 30px; margin-left: -200px;">
+                    ______________________________________________________________________________________________________________________________
+                </p>
+            </div>
         </div>
+
     </div>
+    <div id="bottomsection1">
+        <div id="div7">
+            <h3>Subtotal</h3>
+            <h3>₹149900.00</h3>
+        </div>
+        <div id="div7">
+            <h3>Shipping</h3>
+            <h3>Free</h3>
+        </div>
+        <p style="color: gray;">
+            _____________________________________________________________________________________________________
+        </p>
+        <div id="div8">
+            <h2>Total</h2>
+            <h2>₹149900.00</h2>
+        </div>
+        <div id="div8">
+            <h3>Monthly payment</h3>
+            <h3>₹17642.00/mo.per month with EMI</h3>
+
+        </div>
+        <p style="margin-left: 360px; color: blue;">Get No Cost EMI for 3, 6 or 12 months with qualifying Credit Cards§
+        </p>
+        <button style="height: 60px;
+        width: 390px;
+        color: white;
+        background-color: blue;
+        border-color: blue;
+        border-radius: 10px;
+        margin-left: 425px;">Check Out</button>
+        <p style="color: gray; width: 100%; margin-left: -500px;">
+            __________________________________________________________________________________________________________________________________________________________________________________________
+        </p>
+        <h3>Need some help? Chat now or call 000800 040 1966.</h3>
+        <p style="color: gray; width: 100%; margin-left: -500px; margin-top: 0px;">
+            __________________________________________________________________________________________________________________________________________________________________________________________
+        </p>
     </div>
+    <div>
+        <h1 style="margin-top: 50px; font-size: 1cm;">
+            <center>A few recommendations.</center>
+        </h1>
+        <div id="recommendations">
+            <div>
+                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MU862?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1591824860000"
+                    alt="" />
+                <h3>20W USB-C Power Adapter
+                </h3>
+                <p>MRP ₹1900.00</p>
+                <p>(Incl. of all taxes)</p>
+                <button id="button2">Add to Bag</button>
+            </div>
+            <div>
+                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1603835871000"
+                    alt="">
+                <h3>MagSafe Charger
+                </h3>
+                <p>MRP ₹4500.00</p>
+                <p>(Incl. of all taxes)</p>
+                <button id="button2">Add to Bag</button>
+            </div>
+            <div>
+                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MM1G3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1629962564000"
+                    alt="" />
+                <h3>iPhone 13 Pro Leather Case with MagSafe
+                </h3>
+                <p>MRP ₹5500.00</p>
+                <p>(Incl. of all taxes)</p>
+                <button id="button2">Add to Bag</button>
+            </div>
+        </div>
+        <div id="fresh">
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/apple-new-arrivals-checkout-201804?wid=980&hei=400&fmt=jpeg&qlt=95&.v=1523551959954" alt=""/>
+            <h1 style="margin: -250px 0px 0px 150px;">New Arrivals</h1>
+            <p style="margin: 5px 0px 0px 120px; font-size: larger;">Check out the latest accessories.</p>
+            <h3 style="color: #0077ED; margin: 5px 0px 0px 200px;">Shop<i class="fa-solid fa-angle-right"></i></h3>
+        </div>
+        <p style="color: gray; width: 100%; margin-left: -500px; margin-top: -20px;">
+            ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+        </p>
+        <div id="que">
+            <h1>Questions About Buying</h1>
+            <i style="font-size: xx-large; margin-top: 35px; color: grey;" class="fa-solid fa-plus"></i>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="rows">
+                <p>
+                    **Monthly pricing is after purchase using credit card EMI at 14% pa over a 9 month tenure. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your bank, subject to your bank’s terms and conditions.
+    
+    Price may also include trade-in credit. Pricing with a trade-in is after trade-in of a specific device. Trade-in values vary based on the condition, year, and configuration of your trade-in device. You must be at least 18 years old. Additional terms from Apple or Apple’s trade-in partner may apply.
+    
+    Representative example: Based on purchase of ₹17430. Total amount payable ₹18462 paid over 9 months as 9 monthly payments of ₹2051 at an interest rate of 14% paper annum. Total interest paid to bank: ₹1032.
+    
+    §No Cost EMI available for purchases made using qualifying credit cards on 3, 6 or 12 month tenures only. Offer available on qualifying purchases made after 1:30 PM IST on January 20, 2022 and before 11:59 PM IST on April 28, 2022. Minimum order spend applies as per your credit card’s issuing bank threshold. Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Credit card eligibility is subject to terms and conditions between you and your credit card issuing bank. Offer may be revised or withdrawn at any time without any prior notice. Offer valid for limited period. Terms & Conditions apply.
+    
+    Representative example: Based off a 12 month tenure. ₹69900 total cost includes 15% pa and No Cost EMI savings of ₹5363, paid over 12 months as 12 monthly payments of ₹5825.
+    
+    †† We use your location to show you delivery options faster. We found your location using your IP address or because you entered it during a previous visit to Apple.
+                </p>
+                <div class="horiline"></div>
+                <div class="footer-col">
+                    <h4>Shop and Learn</h4>
+                    <ul>
+                        <li>Store</li>
+                        <li>Mac</li>
+                        <li>iPad</li>
+                        <li>iPhone</li>
+                        <li>Watch</li>
+                        <li>Airpods</li>
+                        <li>TV & Home</li>
+                        <li>iPod touch</li>
+                        <li>Airtag</li>
+                        <li>Accessories</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Apple Music</li>
+                        <li>Apple TV+</li>
+                        <li>Apple Fitness+</li>
+                        <li>Apple News+</li>
+                        <li>Apple Arcade</li>
+                        <li>iCloud</li>
+                        <li>Apple One</li>
+                        <li>Apple Card</li>
+                        <li>Apple Books</li>
+                        <li>Apple Podcasts</li>
+                        <li>App Store</li>
+                    </ul>
+                    <h4>Account</h4>
+                    <ul>
+                        <li>Manage Your Apple ID</li>
+                        <li>Apple Store Account</li>
+                        <li>iCloud.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Apple Store</h4>
+                    <ul>
+                        <li>Find a Store</li>
+                        <li>Genius Bar</li>
+                        <li>Today at Apple</li>
+                        <li>Apple Camp</li>
+                        <li>Apple Store App</li>
+                        <li>Refurbished and Clearance</li>
+                        <li>Financing</li>
+                        <li>Apple Trade In</li>
+                        <li>Order Status</li>
+                        <li>Shopping Help</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Business</h4>
+                    <ul>
+                        <li>Apple and Business</li>
+                        <li>Shop for Business</li>
+                    </ul>
+                    <h4>For Education</h4>
+                    <ul>
+                        <li>Apple and Education</li>
+                        <li>Shop for K-12</li>
+                        <li>Shop for College</li>
+                    </ul>
+                    <h4>For Healthcare</h4>
+                    <ul>
+                        <li>Apple in Healthcare</li>
+                        <li>Health on Apple Watch</li>
+                        <li>Health Records on iPhone</li>
+                    </ul>
+                    <h4>For Government</h4>
+                    <ul>
+                        <li>Shop for Government</li>
+                        <li>Shop for Veterans and Military</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Apple Values</h4>
+                    <ul>
+                        <li>Accessibility</li>
+                        <li>Education</li>
+                        <li>Environment</li>
+                        <li>Inclusion and Diversity</li>
+                        <li>Privacy</li>
+                        <li>Racial Equity and Justice</li>
+                        <li>Supplier Responsibility</li>
+
+                    </ul>
+                    <h4>About Apple</h4>
+                    <ul>
+                        <li>Newsroom</li>
+                        <li>Apple Leadership</li>
+                        <li>Career Opportunities</li>
+                        <li>Investors</li>
+                        <li>Ethics & Compliance</li>
+                        <li>Events</li>
+                        <li>Contact Apple</li>
+                    </ul>
+                </div>
+            </div>
+            <p>More ways to shop: <a class="lastanchor" href="">Find an Apple Store</a> or <a class="lastanchor"
+                    href="">other retailer</a> near you. Or call 1-800-MY-APPLE.</p>
+            <div class="horiline"></div>
+            <div id="lastline">
+                <div>
+                    <p>Copyright © 2022 Apple Inc. All rights reserved.</p>
+                </div>
+                <div id="baseflex">
+                    <div>
+                        <p>Privacy Policy</p>
+                    </div>
+                    <div>
+                        <p> Terms of Use</p>
+                    </div>
+                    <div>
+                        <p>Sales and Refunds</p>
+                    </div>
+                    <div>
+                        <p> Legal</p>
+                    </div>
+                    <div>
+                        <p> Site Map</p>
+                    </div>
+                </div>
+                <div>
+                    <p>United States</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
 </body>
+
 </html>
