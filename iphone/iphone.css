@@ -525,6 +525,11 @@ ul{
     color:#8bb7e4;
 }
 
+#anchor{
+    color:rgb(173, 172, 172);
+    text-decoration: solid;
+    font-size: 12px;
+}
 
 
 
