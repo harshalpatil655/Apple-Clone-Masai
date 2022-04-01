@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+
+#nav {
+    background-color: black;
+    padding: 10px;
+}
+        #navbar{
+    height: 50px;
+    width:100%;
+    background-color: #313132;
+    display:grid;
+    grid-template-columns: repeat(13,80px);
+    grid-template-rows: auto;
+    /* gap:10px; */
+    justify-content: center;
+}
+#navbar>div{
+    
+    /* border:1px solid red; */
+    color:rgb(173, 172, 172);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+} 
+ #anchor{
+    color:rgb(173, 172, 172);
+    text-decoration: solid;
+}
+nav {
+    background-color: white;
+    margin-left: 70px;
+    /* height: 100px; */
+} 
+
+#con {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 5px;
+    background-color: #fbfbfd;
+
+}
+
+nav+div {
+    height: 30px;
+    
+
+}
+
+nav+div>p {
+    text-align: center;
+    color: #8a8a8c;
+    margin-top: 5px;
+}
+
+.logo{
+    height: 54px;
+}
+#container{
+  width: 80%;
+  margin-left: 250px;
+  height: 500px;
+  /* border: 1px solid rebeccapurple; */
+}
+#words{
+    margin-top: -400px;
+    margin-left: 600px;
+    /* border: 1px solid chocolate; */
+}
+#container1{
+    background-image: url("https://www.apple.com/v/airpods/q/images/overview/airpods_pro_left__bvanpj0ujnf6_large.png");
+    /* border:1px solid red; */
+    height: 600px;
+    width: 90%;
+
+    margin: 50px;
+    margin-left: 65px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+#first {
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 35px;
+}
+
+.first_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfbfd;
+    margin-bottom: 20px;
+}
+
+
+.first_img_2nd_div{
+ display: flex;
+ /* border: 1px solid blue; */
+ justify-content:center
+}
+
+.first_2nd_div>a{
+    text-decoration: none;
+}
+
+
+
+/* .first_img>button{
+
+    margin-left: 80px;
+} */
+
+.first_img>div:nth-child(1){
+    margin-top: 60px;
+
+}
+
+.first_img>div>h3{
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 25px;
+    margin-bottom: -10px;
+    color: #f78131;
+}
+
+.first_img>div>h3+h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.first_img>div>h1+h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 54px;
+    margin-bottom: 30px;
+
+}
+.first_img>div>h2+p{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 100px;
+    /* margin-left: 20px; */
+    margin-bottom: 10px;
+
+}
+
+.font{
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+                /* all button color blue a have some boder radius so only target button  */
+  button{
+      border-radius: 20px;
+      background-color: #0071e3;
+      /* height: 40px; */
+      font-size: 10px;
+      width: 78px;
+height: 40px;
+      color: #f5f5f7;
+      border: none;
+     
+      
+  }
+  #containerr{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 450px;
+    display: flex;
+    gap: 35px;
+    margin-top: 50px;
+}
+#container10{
+        /* border: 1px solid red; */
+        color: #6e6e73;
+        width: 1180px;
+        /* height: 1990px; */
+        margin-top: 120px;
+        margin-left: 300px;
+      
+      }
+      #container10>p{
+        margin-bottom: 15px;
+      }
+      #inline{
+        display: flex;
+        /* border: 1px solid red; */
+        width: 300px;
+        height: 10px;
+        font-weight: 100;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        gap: 20px;
+      }
+      #inline>p{
+        margin-top: -2px;
+        margin-left: 15px;
+      } 
+     #color2{
+       color: #6fa2da;
+
+     }
+     .color2:hover{
+ text-decoration: underline;
+ zoom: 101%;
+     }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div><a id="anchor" href="/Apple-Clone-Masai/index.html"><i class="fa-brands fa-apple"></i></a></div>
+        <div>
+            <a id="anchor" href="/Apple-Clone-Masai/store/store.html"><p>Store</p></a>
+        </div>
+        <div>
+           <a id="anchor" href="/Apple-Clone-Masai/mac/Mac.html"><p>Mac</p></a> 
+        </div>
+        <div>
+            <p>iPad</p>
+        </div>
+        <div>
+           <a id="anchor" href="/Apple-Clone-Masai//iphone/iphone.html"><p>iPhone</p></a> 
+        </div>
+        <div>
+            <p>Watch</p>
+        </div>
+        <div>
+         <a id="anchor" href="/Apple-Clone-Masai/Airpods/Airpods.html"> <p>AirPods</p></a>  
+        </div>
+        <div>
+            <p>TV & Home</p>
+        </div>
+        <div>
+            <p>Only on Apple</p>
+        </div>
+        <div>
+           <a id="anchor" href="/Apple-Clone-Masai/Accessories/Accessories.html"> <p>Accessories</p></a> 
+        </div>
+        <div>
+            <p>Support</p>
+        </div>
+        <div><i  id="padding" class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i  id="padding" class="fa-solid fa-bag-shopping"></i></div>
+    </div>
+    <nav>
+        <div id="con">
+          
+        </div>
+    </nav>
+
+<div>
+    <p>Get 6 months of Apple Music free with your AirPods.* <span style="color: blue;"> Check eligibility</span><span> <i style="color: blue;" class="fa-solid fa-chevron-right"></i></span></p>
+</div>
+<div id ="container">
+
+    <video style="width: 100%;background-size: cover;height: 500px;visibility:visible;" playsinline autoplay muted loop poster="cake.jpg">
+        <source  src=" https://www.apple.com/105/media/us/airpods/2021/625e09e3-e26e-49ed-a5ee-6e4eda5d275f/anim/supercut/medium_2x.mp4#t=0.596306" type="video/webm">
+        <!-- Your browser does not support the video tag. -->
+        
+      </video>
+      <div id="words">
+        <h4 style="width: 30px;height: 20px;border: 1px solid chocolate;border-radius: 25px;color: chocolate; padding: 5px 25px;">New</h4> 
+        <h1 style="color: black;font-size: xx-large; font: weight 900px;margin-bottom: 25px; ">AirPods</h1>
+        <h2  style="color: black;font-size: xx-large;font: weight 500px; margin-bottom: 25px;">3rd Generation</h2>
+        <h3 style="color: black;font-size:medium;padding-left: 20px;font-weight: 400;">$1999.00</h3>
+     </div>
+</div>
+<div  id="container1"> 
+<h1 style="font-size:90px;font-weight: 500;padding: 220px 500px;width: 900px;height: 50px;">
+    AirPods Pro
+</h1>
+<p style="margin-top: -120px;margin-left: 720px;font-size: large;">$249.00</p>
+<span><button style="background-color: white;color: black;border-radius: 25px;width: 80px;height: 40px;margin-top: 80px;margin-left: 650px;">Buy</button></span>  <span style="margin-left: 25px;">learn more></span>
+
+
+</div>
+<div class="first_img">
+    <div>
+        <h3  >Free Engraving</h3>
+        <h1> AirPods Pro</h1>
+        <h2>Empower station</h2>
+        <p>From $299</p>
+        <div class="first_img_2nd_div">
+            <button class="font">buy</button>
+            <a class="font" href="#">learn more</a>
+        </div>
+
+    </div>
+
+    <div>
+        <img id="first"
+            src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=266&hei=291&fmt=png-alpha&.v=1591634795000"
+            alt="">
+    </div>
+
+</div>
+<div id="containerr">
+    <div style="margin-left:300px;margin-top:100px;">
+    <h1>Get 3% <br>Daily Cash back <br>with Apple Card.</h1>
+    <h3 style="font-weight: 300;">
+        And pay for your new Mac over <br> 12 months, interest-free when <br>you choose to check out with <br>Apple Card monthly Installments.* <br><span style="color: blue;margin-left: 50px;">learn more <span style="color: blue;"><i class="fa-solid fa-angle-right"></i></span></span>
+    </h3>
+    </div>
+    <div>
+        <img src="https://www.apple.com/v/mac/home/bl/images/overview/retail/acmi__e6hmokx3ap0m_large.jpg" alt="">
+    </div>
+    
+    
+    
+    </div>
+
+    <div id="container10">
+        <p>* Pricing for iPhone 13 and iPhone 13 mini includes a $30 carrier instant discount that requires activation with AT&T, T-Mobile, Sprint, or Verizon. Available to qualified customers and requires 24-month installment loan when you select Citizens One or Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple. iPhone activation required with AT&T, T-Mobile, Sprint, or Verizon for purchases made with ACMI at an Apple Store. Subject to credit approval and credit limit. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. Additional Apple Card Monthly Installments terms are in the Apple Card Customer Agreement. Additional iPhone Payments terms are here. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount.</p>
+        <p>** Offer is available for new subscribers who connect an eligible device to an Apple device running iOS 15 or iPadOS 15 or later, for a limited time only. Offer good for 3 months after eligible device pairing. Plan automatically renews at your region’s price per month until cancelled. No purchase necessary for current owners of eligible devices. Service availability varies by region. Restrictions and other terms apply.</p>
+        <p>◊ Apple Card Monthly Installments (ACMI) is a 0% APR payment option available to select at checkout for certain Apple products purchased at Apple Store locations, apple.com(Opens in a new window), the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See https://support.apple.com/kb/HT211204(Opens in a new window) for more information about eligible products. Variable APRs for Apple Card other than ACMI range from 10.99% to 21.99% based on creditworthiness. Rates as of April 1, 2020. If you choose the pay-in-full or one-time-payment option for an ACMI eligible purchase instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable APR assigned to your Apple Card. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the Apple Card Customer Agreement(Opens in a new window) for more information. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. iPhone activation required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Sprint, Verizon, or T-Mobile.</p>
+        <p>† Monthly pricing is available when you select Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple, and is subject to credit approval and credit limit. Financing terms vary by product. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the Apple Card Customer Agreement for more information. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount.</p>
+        <p>To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.</p>
+        <p>Available for qualifying applicants in the United States.
+        <br> Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
+        <p><span id="color"> 1. AT&T Special Deal: </span>  Offer pricing will reflect application of AT&T trade‑in credit applied over 36 months after trade‑in of eligible smartphone. Requires upgrade of an existing line or activation of a new line and purchase of a new iPhone 13 mini, iPhone 13, iPhone 13 Pro, or iPhone 13 Pro Max on qualifying 36‑month 0% APR installment plan, subject to carrier credit qualification. AT&T Installment Plan with Next Up is not eligible for this promotion. $0 down for well-qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. Requires activation on eligible unlimited plan. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $30. Trade‑in device may not be on existing installment plan. Bill credits are applied as a monthly credit over the 36‑month installment plan. Credits start within 3 bills. Will receive catch‑up credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited‑time offer; subject to change. Limits: one trade‑in per qualifying purchase and one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Price for iPhone 13 and iPhone 13 mini includes $30 AT&T instant discount. Activation required.</p>
+        <p> <span id="color">T-Mobile/Sprint Special Deal:</span> Buy an iPhone 13 Series or iPhone 12 series and trade in a qualifying device (iPhone X, iPhone XS, iPhone XS Max, iPhone XR, iPhone 11, iPhone 11 Pro, iPhone 11 Pro Max, iPhone 12, iPhone 12 mini, iPhone 12 Pro, and iPhone 12 Pro Max) to receive (i) Apple instant trade-in credit and (ii) an additional $200 back in bill credits on your T-Mobile/Sprint rate plan. Bill credits will be applied over 24 months toward your rate plan charges; must be active and in good standing to receive credits; allow 2 bill cycles from valid submission and validation of trade in. Tax on pre-credit price due at sale. Limited-time offer; subject to change. Qualifying credit, service, and trade-in in good condition required. T-Mobile/Sprint in stores and on customer service calls, $30 assisted or upgrade support charge may be required. Max 4/account. May not be combinable with some offers or discounts. Price for iPhone 13, iPhone 13 mini, iPhone 12, and iPhone 12 mini includes $30 T-Mobile/Sprint instant discount. Activation required.  </p>
+        <p><span id="color">Verizon Special Deal:</span> Offer pricing will reflect application of Verizon's trade-in credit up to $440 (iPhone 13, iPhone 13 Pro, and iPhone 13 Pro Max) or $412 (iPhone 13 mini) or $425 (iPhone 12) or $375 (iPhone 12 mini) after trade-in of eligible smartphone. Savings comprised of (i) Apple instant trade-in credit at checkout and (il) Verizon monthly bill credits applied over 36 months. Customer must remain in the Verizon Device Payment Program for 36 months to receive the full benefit of the Verizon bill credits. Bill credits may take 1-2 bill cycles to appear. If it takes two cycles for bill credits to appear, you'll see the credit for the first cycle on your second bill in addition to that month's credit. Requires purchase and activation of a new iPhone 12 mini, iPhone 12, iPhone 13 mini, iPhone 13, iPhone 13 Pro, or iPhone 13 Pro Max with the Verizon Device Payment Program at 0% APR for 36 months, subject to carrier credit qualification, and iPhone availability and limits. Taxes and shipping not included in monthly price. Sales tax may be assessed on full value of new iPhone. Requires eligible unlimited service plan. Requires trade-in of eligible device in eligible condition. Must be at least 18 to trade-in. Apple or its trade-in partners reserve the right to refuse or limit any trade-in transaction for any reason. In-store trade-in requires presentation of a valid. government-issued photo ID (local law may require saving this information). In-store promotion availability subject to local law; speak to a Specialist to learn more. Limited- time offer; subject to change. Additional terms from Apple, Verizon, and Apple's trade-in partners may apply. Price for iPhone 12 mini, iPhone 12, iPhone 13 mini, and iPhone 13 includes $30 Verizon instant discount. Activation required.</p>
+        <p>2. Special pricing available to qualified customers. To learn more about how to start qualifying toward special pricing, talk to an Apple Specialist in a store or give us a call at 1‑800‑MY‑APPLE.</p>
+        <p></p>
+        <p></p>
+        <p>†† We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to Apple.
+          </p>
+          <hr></hr>
+          <div id="inline">
+            <i class="fa-brands fa-apple"></i> 
+            <i id="'pp" class="fa-solid fa-chevron-right"></i>
+           <p>AirPods</p>
+          </div>
+          <hr>
+          <p>Shop and Learn</p>
+          <hr>
+          <p>Apple store</p>
+          <hr>
+          <p>For Education</p>
+          <hr>
+          <p>For Business</p>
+          <hr>
+          <p>Government</p>
+          <hr>
+          <p>For Healthcare</p>
+          <hr>
+          <p>Apple Values</p>
+          <hr>
+          <p>Account</p>
+          <hr>
+          <p>About Apple</p>
+          <hr>
+          <p>More ways to shop:<span  id="color2"> Find an Apple Store </span>or<span id="color2">  other retailer</span> near you. Or call 1‑800‑MY‑APPLE.</p>
+        <p>United States</p>
+        <p>Copyright © 2022 Apple Inc. All rights reserved</p>
+        <p>Privacy policy |  Terms of Use | Sales and Refunds | Legal | Site Map</p>
+        </div>
+        
+    
+</body>
+</html>
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+crossorigin="anonymous"></script>
+<script>
+var nav_data = [{
+    image_url: "https://www.apple.com/v/airpods/q/images/chapternav/airpods_2gen_light__ckwbqlgv1r9e_large.svg",
+    name: 'MacBook Air',
+    generation:"2nd Generation",
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/airpods/q/images/chapternav/airpods_3gen_light__6r7zooyk4lua_large.svg",
+    name: 'AirPods',
+    generation:"3rd Generation",
+    status: "New"
+},
+
+{
+    image_url: "https://www.apple.com/v/airpods/q/images/chapternav/airpods_pro_light__ets5a19rt3au_large.svg",
+    name: 'AirPods pro ',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/airpods/q/images/chapternav/airpods_max_light__cvaaddhgazqu_large.svg",
+    name: 'AirPods Max',
+    status: ""
+},
+
+{
+    image_url: "https://www.apple.com/v/airpods/q/images/chapternav/airpods_compare_light__cmuvdvbxj1w2_large.svg",
+    name: 'Compare',
+    status: ""
+},
+{
+    image_url: "https://www.apple.com/v/airpods/q/images/chapternav/apple_music_light__fexraacz3dme_large.svg",
+    name: 'Apple Music',
+    status: ""
+},
+]
+nav_data.map(function (elem) {
+    var card = document.createElement('div')
+
+    var logo = document.createElement('img')
+    logo.src = elem.image_url;
+    logo.setAttribute('class','logo')
+    
+
+    var name = document.createElement('p')
+    name.textContent = elem.name;
+
+    var generation=document.createElement("p")
+    generation.textContent=elem.generation;
+    var status = document.createElement('p')
+    status.textContent = elem.status;
+    status.style.color='#f78131'
+    // console.log(logo,name,status)
+    card.append(logo, name, generation,status)
+
+    document.querySelector('#con').append(card)
+})
+</script>

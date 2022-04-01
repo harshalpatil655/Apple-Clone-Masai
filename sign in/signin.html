@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #main {
+            margin: 0 35% 0 35%;
+            /* height: 500px; */
+            /* border: 1px solid red; */
+            font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin-top: 5%;
+        }
+
+        .div1 {
+            text-align: center;
+            margin-bottom: -5%;
+        }
+
+        .div2 {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        #first-name,
+        #last-name {
+            width: 40%;
+            padding: 10px;
+            border-radius: 5px;
+            margin: auto;
+            font-size: 18px;
+            border: 1px solid rgb(197, 186, 186);
+        }
+
+        .country {
+            font-size: 15px;
+            margin-top: 30px;
+        }
+
+        #country-name {
+            width: 98%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: -10px;
+            margin-left: 5px;
+            font-size: 18px;
+            border: 1px solid rgb(197, 186, 186);
+        }
+
+        #dob {
+            width: 93%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 18px;
+            border: 1px solid rgb(197, 186, 186);
+        }
+
+        .border-line,
+        .border-line2,
+        .border-line3,
+        .border-line5,
+        .border-line6 {
+            border-top: 1px solid #f6f6f6;
+            margin-top: 40px;
+            width: 70%;
+            margin-left: 15%;
+
+        }
+
+        #main2,
+        #main3,
+        #main4,
+        #main5 {
+            margin: 0 35% 0 35%;
+            /* height: 500px; */
+            /* border: 1px solid red; */
+            font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin-top: 30px;
+            /* border: 1px solid red; */
+        }
+
+        #apple-id {
+            width: 93%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 18px;
+            border: 1px solid rgb(197, 186, 186);
+        }
+
+        #apple-id+p {
+            margin-top: 5px;
+            /* border:  1px solid red; */
+            margin-left: 4px;
+            color: gray;
+        }
+
+        #password {
+            width: 93%;
+            padding: 10px;
+            border-radius: 5px;
+            /* margin-top: 10px; */
+            margin-left: 5px;
+            font-size: 18px;
+            border: 1px solid rgb(197, 186, 186);
+        }
+
+        #confirm-password,
+        #mobile {
+            width: 93%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 5px;
+            font-size: 18px;
+            margin-top: 10px;
+            border: 1px solid rgb(197, 186, 186);
+        }
+
+        #confirm-pasword {
+            margin-top: 50px;
+        }
+
+        .mobile-no-ke-bad {
+            font-size: small;
+            color: gray;
+        }
+
+
+        #text-message,
+        #phone-call {
+            margin-left: 20px;
+        }
+
+        .announcement-ke-bad,
+        #Apps-music-movies-and-more-ke-bad {
+            margin-left: 5%;
+            font-size: small;
+            color: gray;
+            margin-top: -0.1%;
+        }
+
+        #Apps-music-movies-and-more {
+            margin-top: 4%;
+        }
+
+        #main5 {
+            display: flex;
+            margin-top: 3%;
+            /* justify-content:space-around; */
+            height: 60px;
+            /* border: 1px solid red; */
+        }
+
+        #main5 img {
+            height: 100%;
+            /* margin-left: -30%; */
+
+        }
+
+        #type-ceptcha {
+            height: 95%;
+            /* border: 1px solid blue; */
+            width: 128%;
+            margin-left: 10%;
+            font-size: 17px;
+            border-radius: 5px;
+            border: 1px solid rgb(197, 186, 186);
+        }
+
+        .border-line6 {
+            margin-top: 5%;
+        }
+
+        .your-apple-id {
+            color: gray;
+            font-size: small;
+            text-align: center;
+        }
+
+        .your-apple-id>a{
+            text-decoration: none;
+            color: blue;
+        }
+
+        .antim{
+            /* border: 1px solid red; */
+            width: 10%;
+            margin: auto;
+            margin-top: 2%;
+        }
+
+        #button{
+            padding: 8px 0px 8px 0px ;
+            width: 100%;
+            background-color: #3799e6;
+            border-radius: 5px;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="div1">
+            <h1>Create Your Apple ID</h1>
+        </div>
+
+        <div class="div2">
+            <p>One Apple ID is all you need to access all Apple services.
+                You already have an Apple ID? <a href="">Find it here</a> </p>
+        </div>
+          <form action="">
+        <div class="div2">
+            <input type="text" id="first-name" placeholder="first name">
+            <input type="text" id="last-name" placeholder="last name">
+        </div>
+
+        <p class="country">COUNTRY / REGION</p>
+
+        <select name="" id="country-name">
+            <option value="">india</option>
+            <option value="">america</option>
+            <option value="">australia</option>
+            <option value="">france</option>
+            <option value="">Rushia</option>
+            <option value="">ucrain</option>
+            <option value="">japan</option>
+        </select>
+
+        <input type="date" id="dob" placeholder="date of birth">
+
+    </div>
+
+    <div class="border-line"></div>
+
+    <div id="main2">
+        <input type="email" id="apple-id" placeholder="name@example.com">
+        <p>This will be your new Apple ID.</p>
+
+        <input type="password" id="password" placeholder="password">
+        <input type="confirem-password" id="confirm-password" placeholder="confirm-password">
+    </div>
+
+    <div class="border-line2"></div>
+
+    <div id="main3">
+        <input type="number" id="mobile" placeholder="mobile number">
+
+        <p class="mobile-no-ke-bad">Make sure you enter a phone number you can always access. It will be used to verify
+            your identity any time
+            you sign in on a new device or web browser. Messaging or data rates may apply.</p>
+
+        <p>Verify with a:
+            <label for="text-message" id="text-message">Text message</label>
+            <input type="radio" name="text">
+
+            <label for="" id="phone-call">Phone call</label>
+            <input type="radio" name="text">
+        </p>
+    </div>
+
+    <div class="border-line3"></div>
+
+    <div id="main4">
+        <input type="checkbox" id="Announcements"> <span>Announcements</span>
+
+        <p class="announcement-ke-bad">Receive announcements, recommendations and updates about Apple products, services
+            and software.</p>
+
+        <input type="checkbox" id="Apps-music-movies-and-more"> <span>Apps, music, movies and more</span>
+        <p id="Apps-music-movies-and-more-ke-bad">Receive new releases, exclusive content, special offers, and
+            recommendations for apps, music, movies, TV,
+            books, podcasts and more.</p>
+
+    </div>
+
+    <div class="border-line5"></div>
+
+    <div id="main5">
+        <div class="ceptcha">
+            <img src="data:image/jpeg;base64, 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"
+                alt="">
+        </div>
+        <div class="ceptcha-img-div">
+            <input type="text" id="type-ceptcha" placeholder="Type the characters in the image">
+        </div>
+    </div>
+
+    <div class="border-line6"></div>
+
+    <div id="main5">
+        <p class="your-apple-id">Your Apple ID information is used to allow you to sign in securely and access your
+            data. Apple records certain usage data for security, support and reporting purposes. <a href="">See how your data is
+                managed.</a></p>
+
+    </div>
+        
+         <div class="antim">
+             <!-- <button id="button">Continue</button> -->
+             <input type="submit">
+         </div>
+        </form>
+
+</body>
+
+</html>
+<script>
+document.querySelector("form").addEventListener("submit", signupforfun)
+
+var userdata = JSON.parse(localStorage.getItem("usercrets")) || []
+function signupforfun() {
+    event.preventDefault();
+
+    var userobj = {
+        firstname: document.querySelector("#first-name").value,
+        lastname: document.querySelector("#last-name").value,
+        country: document.querySelector("#country-name").value,
+        dob: document.querySelector("#dob").value,
+        email: document.querySelector("#apple-id").value,
+        pasword: document.querySelector("#password").value,
+        confirmpasword: document.querySelector("#confirm-password").value,
+        mobile: document.querySelector("#mobile").value,
+    }
+
+    console.log(userobj)
+    userdata.push(userobj);
+    localStorage.setItem("usercrets", JSON.stringify(userdata));
+}
+
+</script>
