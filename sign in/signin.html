@@ -218,7 +218,7 @@
             <p>One Apple ID is all you need to access all Apple services.
                 You already have an Apple ID? <a href="">Find it here</a> </p>
         </div>
-
+          <form action="">
         <div class="div2">
             <input type="text" id="first-name" placeholder="first name">
             <input type="text" id="last-name" placeholder="last name">
@@ -305,10 +305,35 @@
     </div>
         
          <div class="antim">
-             <button id="button">Continue</button>
+             <!-- <button id="button">Continue</button> -->
+             <input type="submit">
          </div>
-
+        </form>
 
 </body>
 
 </html>
+<script>
+document.querySelector("form").addEventListener("submit", signupforfun)
+
+var userdata = JSON.parse(localStorage.getItem("usercrets")) || []
+function signupforfun() {
+    event.preventDefault();
+
+    var userobj = {
+        firstname: document.querySelector("#first-name").value,
+        lastname: document.querySelector("#last-name").value,
+        country: document.querySelector("#country-name").value,
+        dob: document.querySelector("#dob").value,
+        email: document.querySelector("#apple-id").value,
+        pasword: document.querySelector("#password").value,
+        confirmpasword: document.querySelector("#confirm-password").value,
+        mobile: document.querySelector("#mobile").value,
+    }
+
+    console.log(userobj)
+    userdata.push(userobj);
+    localStorage.setItem("usercrets", JSON.stringify(userdata));
+}
+
+</script>
