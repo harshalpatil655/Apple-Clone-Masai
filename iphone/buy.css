@@ -159,10 +159,16 @@ nav+div>p {
 }
 
 #detail>h3{
-    text-align: center;
-    font-size: 25px;
+    /* text-align: center; */
+    font-size: 40px;
     margin-top: 25px;
-    font-size: 25px;
+    /* font-size: 25px; */
+}
+
+
+#colour{
+    font-size: large;
+    margin-top: -30px;
 }
 
 #detail>p:nth-child(1){
@@ -174,7 +180,11 @@ nav+div>p {
 #detail>#colour{
     display: block;
     margin: auto;
-    background-color: #8a8a8c;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    background-color:  #0077ed;
+    color: #ffffff;
+    
 }
 
 #colour+p{
@@ -215,9 +225,19 @@ nav+div>p {
 }
 
 #checkout>button{
-    font-size: 25px;
-    background-color: aqua;
+    width: 220px;
+    height: 80px;
+    background-color: #0077ed;
+    color: #ffffff;
+    border-radius: 8px;
     /* border: none; */
+}
+
+#checkout>button>a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+
 }
 
 button:hover{
