@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+        #navbar {
+            height: 50px;
+            width: 100%;
+            background-color: #313132;
+            display: grid;
+            grid-template-columns: repeat(13, 80px);
+            grid-template-rows: auto;
+            /* gap:10px; */
+            justify-content: center;
+        }
+
+        #navbar>div {
+
+            /* border:1px solid red; */
+            color: rgb(173, 172, 172);
+            text-align: center;
+            padding-top: 15px;
+            font-size: 12px;
+        }
+
+        #div1 {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        #div2 {
+            height: 70px;
+            width: 450px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            margin-left: 250px;
+            margin-bottom: 20px;
+        }
+
+        #div3 {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 65px 50px 65px;
+        }
+
+        #div4 {
+            margin-left: 240px;
+        }
+
+        #div5>div {
+            /* width: 80%; */
+            display: flex;
+            justify-content: space-around;
+            margin-left: 350px;
+            /* margin-right: 400px; */
+            margin-bottom: -20px;
+        }
+        button{
+            padding: 20px 70px 20px 70px;
+            background-color: #0077ED;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin-left: 900px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div><i class="fa-brands fa-apple"></i></div>
+        <div>
+            <p>Store</p>
+        </div>
+        <div>
+            <p>Mac</p>
+        </div>
+        <div>
+            <p>iPad</p>
+        </div>
+        <div>
+            <p>iPhone</p>
+        </div>
+        <div>
+            <p>Watch</p>
+        </div>
+        <div>
+            <p>AirPods</p>
+        </div>
+        <div>
+            <p>TV & Home</p>
+        </div>
+        <div>
+            <p>Only on Apple</p>
+        </div>
+        <div>
+            <p>Accessories</p>
+        </div>
+        <div>
+            <p>Support</p>
+        </div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-solid fa-bag-shopping"></i></div>
+    </div>
+    <div id="div1">
+        <h1>Checkout</h1>
+        <p style="color: #0077ED; margin-top: 30px;">Show Order Summary:₹149900.00</p>
+    </div>
+    <p style="color: grey; margin-top: -15px;">
+        _______________________________________________________________________________________________________________________________________________________________________
+    </p>
+    <h1 style="font-size: 1cm; margin-left: 250px;">How do you want to pay?</h1>
+    <h1 style=" margin-left: 250px;"> Pay in Full. </h1>
+
+    <div id="div2">
+        <h3 style="margin-left: 10px;">Credit or Debit Card</h3>
+        <h5 style="margin-top: -15px; margin-left: 10px;">Visa,Mastercard,AMEX</h5>
+    </div>
+    <div id="div2">
+        <i style="font-size:1cm; margin-top: 10px; margin-left: 10px;" class="fa-brands fa-apple">Pay</i>
+        <p style="color: grey;margin-top: 35px;">
+            ______________________________________________________________________________________________________________
+        </p>
+    </div>
+
+    <div id="div3">
+        <div>
+            <h4>Apply an Apple Store Gift Card:</h4>
+            <h4 style="color: #0077ED;">Enter your gift card number <i class="fa-solid fa-angle-down"></i></h4>
+        </div>
+        <div>
+            <p>You can use upto 8 Apple Store Gift Cards.</p>
+            <p>Apple Store Gift Cards can't be used with</p>
+            <p>Apple Pay.</p>
+
+        </div>
+
+    </div>
+    <p style="color: grey;margin-top: 20px; margin-left: 240px;">
+        ______________________________________________________________________________________________________________
+    </p>
+    <div id="div4">
+        <h1>Terms & Conditions</h1>
+        <input type="checkbox">
+        <p style="margin-left: 30px; margin-top: -20px;">By clicking on this checkbox, i represent that i have read and
+            accept the terms and conditions of Apple's <a href="">Sales and</a></p>
+        <p style="margin-left: 30px; margin-top: -10px;"> <a href="">Refund Policy</a> and that i am a member of one of
+            the defined groups, eligibleto purchase and
+            that the products being </p>
+        <p style="margin-left: 30px; margin-top: -10px;">purchased direct from Apple inc. are for the personal,
+            education, and/or research use of a college student,
+            faculty, or</p>
+        <p style="margin-left: 30px; margin-top: -10px;">staff member.</p>
+    </div>
+    <p style="color: grey;margin-top: 20px; margin-left: 240px;">
+        ______________________________________________________________________________________________________________
+    </p>
+    <h2 style="margin-left: 240px;">Your Total</h2>
+    <div id="div5">
+        <div>
+            <h3>Subtotal</h3>
+            <h3>₹149900.00</h3>
+        </div>
+        <div>
+            <h3>Shipping</h3>
+            <h3>Free</h3>
+        </div>
+        <p style="color: grey;margin-top: 20px; margin-left: 410px;">
+            _________________________________________________________________________________________
+        </p>
+        <div>
+            <h2>Your Total</h2>
+             <h3>₹149900.00</h3>
+        </div>
+    </div>
+    <a href="bag1.html"><button>Place Your Order</button></a>
+</body>
+ <!-- checking -->
+
+</html>

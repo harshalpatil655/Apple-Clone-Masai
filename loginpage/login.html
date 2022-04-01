@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .heading {
+            width: 65%;
+            /* border: 1px solid red ; */
+            margin: auto;
+            font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 120%;
+        }
+
+        .heading+h3 {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 5%;
+            font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+
+        #id {
+            width: 100%;
+            height: 17px;
+            padding: 10px;
+            border-radius: 5px;
+            margin: auto;
+            font-size: 18px;
+            margin-top: -20px;
+            border: 1px solid rgb(197, 186, 186);
+        }
+
+        .apple-id {
+            margin: auto;
+            width: 20%;
+        }
+
+        .remember{
+            font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+            width: 20%;
+            margin: auto;
+            /* border: 1px solid red; */
+           height: 50px;
+           text-align:  center;
+           margin-top: 4%;
+           margin-bottom: 18px;
+           font-size: large;
+           border-bottom: 1px solid rgb(236, 235, 235);
+           
+           
+        }
+
+        #check{
+            background-color: blue;
+        }
+
+        a{
+            text-decoration: none;
+            color: blue;
+            font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+        }
+
+        #a1+p{
+            text-align: center;
+            font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+
+        #a1{
+            margin-left: 41%;
+        }
+
+        a:hover{
+            cursor: pointer;
+            border-bottom: 1px solid blue;
+        }
+
+        .helpline{
+            font-size: 20px;
+            /* padding-top: 32px; */
+            margin-left: 17%;
+            font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+
+        .line{
+            border-top: 1px solid rgb(197, 186, 186);
+            margin-top: 9%;
+           
+        }
+
+        .helpline{
+            padding-top: 1%;
+            font-size: medium; 
+            
+        }
+
+        .online-store>p{
+            width: 100%;
+            margin-left: 17%;
+            color: gray;
+            font-size: small;
+            margin-top: 2%;
+            padding-bottom: 20px;
+            /* border-bottom: 1px solid gray ;  */
+            border-bottom-width: 1%;
+
+        }
+
+        .online-store{
+            background-color: #f5f5f7;
+            padding-top: 1px;
+        }
+
+
+        .retailer>p{
+            width: 100%;
+            margin-left: 17%;
+            color: gray;
+            font-size: small;
+            padding-bottom: 26px;
+            
+        }
+
+        .last-div{
+            display: flex;
+            margin-top: -45px;
+        }
+
+        .div1{
+            margin-left: 17%;
+            color: gray;
+            font-size: small;
+        }
+
+        .div2{
+            margin-left: 45px;
+            color: black;
+            font-size: 12px;
+            margin-top: 13px;
+            width: 30%;
+        }
+    
+        /* div2 a{
+            margin-left: 30px;
+            text-decoration: none;
+            color: gray;
+        } */
+        
+        
+        
+       
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Sign in for faster checkout.</h1>
+    </div>
+    <h3>
+        Sign in to Apple Store
+    </h3>
+<form action="">
+    <div class="apple-id">
+        <input type="text" id="id" placeholder="Apple ID"> 
+        <input type="submit">
+    </div>
+
+    </form>
+
+    <div class="remember">
+        <input type="checkbox" id="check"> <span>Remember Me</span>
+       </div>
+ 
+     <a href="" id="a1">Forgotten your Apple ID or password?</a>
+     <p>Do not have an Apple ID?<a href=""> Create yours now.</a>  </p>
+
+     <div class="line"></div>
+     
+     <p class="helpline">Need some help? <a href=""> Chat now</a> or call 000800 040 1966. </p>
+    
+    <div class="online-store">
+        <p>The Apple Online Store uses industry-standard encryption to protect the confidentiality of the information you submit. Learn more about our Security Policy.</p>
+    
+          <div class="retailer">
+        <p>More ways to shop: <a href="">Find a retailer</a> near you. Or call 000800 040 1966.</p>
+      </div>
+
+      <div class="last-div">
+        <div class="div1">
+            <p>Copyright © 2022 Apple Inc. All rights reserved. </p>
+            </div>
+                <div class="div2">
+                    <a href="" style="color: grey;">Privacy Policy</a>   <a href="" style="color: grey;">Terms of Use</a>
+                    <a href="" style="color: grey;">Sales Policy</a>      <a href="" style="color: grey;">legel</a>       <a href="" style="color: grey;">Site Map</a>
+                </div>
+              
+            
+            
+        </div>
+        
+     </div>
+
+
+   
+
+    
+
+    </body> 
+ </html>
+
+
+
+<script>
+
+document.querySelector("form").addEventListener("submit", myfunc);
+
+var readuser = JSON.parse(localStorage.getItem("usercrets"));
+
+function myfunc(){
+    event.preventDefault();
+
+    var entermail = document.querySelector("#id").value;
+
+    for(var i=0; i<readuser.length; i++) {
+        console.log(readuser[i])
+        if(readuser[i].email == entermail){
+            alert("log in Successfull");
+            window.location.href="/Apple-Clone-Masai/index.html"
+            break;
+        }
+        else{
+            alert("log in failed")
+        }
+    }
+}
+
+</script>
+
