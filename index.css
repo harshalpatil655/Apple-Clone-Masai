@@ -1,39 +1,22 @@
-/* ///////////      NavBar CSS     ////////////////
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 *{
-    margin: 0px;
-    padding-top: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    
+    padding: 0%;
+    margin: 0%;
 }
 #navbar{
-    height: 50px;
-    width:100%;
-    background-color: #313132;
+    height:50px;
+    width:100%;  
     display:grid;
     grid-template-columns: repeat(13,80px);
     grid-template-rows: auto;
-    /* gap:10px; */
+    background-color: #313132;
     justify-content: center;
 }
 #navbar>div{
-    
-    /* border:1px solid red; */
     color:rgb(173, 172, 172);
     text-align: center;
     padding-top: 15px;
     font-size: 12px;
 }
-
-#iphoneamit>p{
-
-    text-decoration: none;
-}
-
-
-/* ----------unicef------------ */
 
 
 
@@ -41,156 +24,108 @@
     height:80px;
     width:100%;
     background-color: #f5f5f7;
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    gap:10px;
+    display: flex;
     justify-content: center;
-    text-align: center;
-  
-   
+}
+#unicefimg>img{
+    padding-top: 20px;
+    width:140px;
     
 }
-#unicef>div{
-    margin: auto;    
+#anchor{
+    color:#478fd9;
+    font-size: 16px;
 }
-div>img{
-    width:140px;  
+#unicefanchor{
+    
+    padding-top: 35px;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+#iphone13{
+    height:617px;
+    background-image: url("https://www.apple.com/v/home/an/images/heroes/iphone-13-pro/hero_iphone13pro_avail__iy77cld0zwii_medium.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+}
+#iphone13>h1{
+    font-size: 70px;
+}
+#iphone13>h3{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 div>a{
     color:#478fd9;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
+}
+a>i{
+    font-size: 12px;
+    padding-right: 20px;
 }
 
-/* /////////////   Pro   //////////
----------------------------------
----------------------------------- */
-#pro{
-  
-  width:100%;
-  /* border:1px solid red */
-  background-color:#fbfbfd;
-}
-#iphone13>h1{
-    padding-top: 40px;
-      text-align: center;
-      font-size: 60px;
-}
-#ohsopro>p{
-    text-align: center;
-    font-size: 40px;
-}
-#iphone13link{
-    display:flex;
-    justify-content: center;
-    font-size: 20px;
-   
-    
-}
-#iphone13link>a{
-    margin-right: 20px;
-}
-#iphone13link>a>i{
-    
-    font-size: 15px;
-}
-#pro>#iphone13pic{
-    display: flex;
-    justify-content: center;
-       
-}
-#iphone13pic>img{
-    width:60%
-}
-.empty{
-    height:10px;
-    
-    
-}
-/* #iphonese1{
-    display: flex;
-    justify-content: center;
-}
-#iphonese1>img{
-    width: 100%;
-} */
+
+
 #iphonese{
-    background-color: #fbfbfd;
-    width:100%;
-    
-}
-#iphonese>div{
-    display:flex;
-    justify-content: center;
-}
-#iphonese>div>h5{
+    height:617px;
+    background-image: url("https://www.apple.com/v/home/an/images/heroes/iphone-se/hero_iphonese_avail__eg8srhcnpo66_medium.jpg");
+    background-size: cover;
     padding-top: 50px;
-    font-size: 20px;
+    text-align: center;
 }
-#iphonese>#logose>img{
-    height:40px;
-    width:15%;
+#iphonese>p{
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: 10px;
 }
-#iphonese>div>p{
-    padding-top: 20px;
-    font-size: 30px;
+#iphonese>img{
+    height:50px;
 }
-#buyanchor>a{
-    margin-top: 10px;
-    margin-right: 30px;
-    font-size: 22px;
-}
-#buyanchor>a>i{
-    font-size: 15px;
+#iphonese>h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
 }
 
-#sepic>img{
-    
-    width:70%;
-}
 
-/* ------------CODA Image------------
-------------------------------------
-====================================
-===================================== */
-/* #coda>img{
-    height:700px;
-    width:100%;  
-} */
-#bigimage{
-    height:700px;
-    color:white;
-    position: relative;
+#coda{
+    height:617px;
     background-image: url("https://www.apple.com/v/home/an/images/heroes/tv-plus-oscar-coda/hero_coda__cv3jny7jpe6a_medium.jpg");
     background-size: cover;
-    
+    padding-top: 100px;
+    text-align: center;
+    color:white;
 }
-#bigimage>div:nth-child(1){
+#coda>p{
+    font-size: 21px;
+    font-weight: 600;
+}
+#coda>h2{
+    font-size: 60px;
+    margin-top: 4px;
+}
+#coda>div{
+    height:390px;
    
-    text-align: center;
-    padding-top: 90px;
 }
-#bigimage>div:nth-child(1)>p{
-    font-size: 55px;
-}
-#bigimage>div:nth-child(2){
-    height:300px;
-   
-    text-align: center;
-    padding-top: 50px;
-}
-#bigimage>div:last-child{
+#coda>h6{
+    font-size: 28px;
     
-    text-align: center;
-    padding-top: 50px;
 }
-#bigimage>div:last-child>p{
-    
-    font-size: 30px;
+#coda>#play{
+    padding-top: 20px;
+    font-size: 19px;
 }
-/* ===========studio =================
-------------------------------------
-===================================== */
 
 
 
@@ -199,182 +134,171 @@ div>a{
     
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,650px);
-    gap: 10px;
+    grid-template-rows: repeat(1,650px);
+    gap:10px;
     
-    
-   
 }
-#studio>.display{
+
+#display{
+    
     background-image: url("https://www.apple.com/v/home/an/images/promos/studio-display/promo_studiodisplay_avail__d1cx9j73ooq6_medium.jpg");
     background-size: cover;
-   
+    padding-top: 50px;
     text-align: center;
+    
 }
-
-.display>h1{
-    font-size: 50px;
-    margin-top: 50px;
+#display>h1{
+    margin-top: 40px;
+    font-size: 40px;
 }
-.display>h4{
+#display>h3{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 500;
     font-size: 25px;
-}
-a>i{
-    margin-top: 20px;
-    font-size: 12px;
-    margin-right: 30px;
 }
 #mac{
-   
+    
     background-image: url("https://www.apple.com/v/home/an/images/promos/mac-studio/promo_macstudio_avail__byhwkp0o4gty_medium.jpg");
-    background-size: cover; 
+    background-size: cover;
+    padding-top: 50px;
     text-align: center;
-}
-.display>h1{
-    font-size: 50px;
-    margin-top: 50px;
-}
-.display>h4{
-    font-size: 25px;
-}
-#ipad{
-   
-    background-image: url("https://www.apple.com/v/home/an/images/promos/ipad-air/promo_ipadair_avail__ferd4bfpcdm6_medium.jpg");
-    background-size: cover; 
-    text-align: center;
-}
-.display>img{
-    
-    margin-top: 50px;
-}
-.display>h5{
-    color: white;
-    font-size: 25px;
-}
-#iphone13{
-   
-    background-image: url("https://www.apple.com/v/home/an/images/promos/iphone-13/promo_iphone13_avail__frc36u35m0ii_medium.jpg");
-    background-size: cover; 
-    text-align: center;
-}
-.display>h1{
-    font-size: 50px;
-    margin-top: 50px;
-}
-.display>h4{
-    font-size: 25px;
-}
-#watch{
-   
-    background-image: url("https://www.apple.com/v/home/an/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_medium.jpg");
-    background-size: cover; 
-    text-align: center;
-}
-.display>h1{
-    font-size: 50px;
-    margin-top: 50px;
-}
-.display>h4{
-    font-size: 25px;
-}
-.display>h3{
-    color: #ce2b31;
-}
-#chain{
-   
-    background-image: url("https://www.apple.com/v/home/an/images/promos/esci-supplier-responsibility/promo_esci__dq6nssf6yp26_medium.jpg");
-    background-size: cover; 
-    text-align: center;
-}
-.display>h1{
-    font-size: 50px;
-    margin-top: 50px;
-}
-
-
-
-/* ===========================
-==========================
-============================ */
-/* #ipad>img{
-    width:100%;
-}
-#ipadair{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    gap:10px;
-    justify-content: center;
-    text-align: center;
-    background-color: #fbfbfd;
     
 }
-#ipadair>div{
-    background-color: #fbfbfd;
-}
-#ipadair>div>h1{
-    padding-top: 50px;;
+#mac>h1{
+    margin-top: 30px;
     font-size: 40px;
 }
-#ipadair>div>p{
-    font-size: 23px;
-    padding-top: 10px;
+#mac>h3{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+#ipad{
+    
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,650px);
+    gap:10px;
+    
+}
+
+#ipadair{
+    
+    background-image: url("https://www.apple.com/v/home/an/images/promos/ipad-air/promo_ipadair_avail__ferd4bfpcdm6_medium.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+    color:white;
+    
+}
+#ipadair>img{
+    height:40px;
+}
+
+#ipadair>h3{
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+#iphone{
+    
+    background-image: url("https://www.apple.com/v/home/an/images/promos/iphone-13/promo_iphone13_avail__frc36u35m0ii_medium.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+    
+    
+}
+#iphone>h1{
+   
+    font-size: 40px;
+}
+#iphone>h3{
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+#watch{
+    
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,650px);
+    gap:10px;
+    
+}
+
+#iwatch{
+    
+    background-image: url("https://www.apple.com/v/home/an/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_medium.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+    
+    
+}
+#iwatch>h1{
+    margin-top: 40px;
+    font-size: 40px;
+}
+#iwatch>h4{
+    color:#cc2127;
+}
+#iwatch>h3{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 5px;
     padding-bottom: 10px;
 }
-
-
-#ipadair>#air>img{
-    width:100%;
-}
-#ipadair>div>a>i{
-    font-size: 12px;
-    margin-left: 7px;
-}
-#watch{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    gap:10px;
-    text-align: center;
-    background-color: #fbfbfd;
-}
-#watch>div{
-    background-color: #fbfbfd;
-}
-#watch>div>a>i{
-    font-size: 12px;
-    margin-left: 7px;
-    padding-top: 20px;
-}
-#watch>div>h1{
+#business{
+    
+    background-image: url("https://www.apple.com/v/home/an/images/promos/apple-business-essentials/promo_business__ctja2nwzpey6_medium.jpg");
+    background-size: cover;
     padding-top: 50px;
-    font-size: 40px;
-}
-#watch>div>p{
-    font-size: 23px;
-    
-    
-}
-#watch>div>h4{
-    color:#d8585d;
-} */
-
-/* ===============text==================
---------------------------------------
----------------------------------------- */
-
-#text{
-    background-color: #f5f5f7;
     text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    
     
 }
+#business>img{
+    padding-top: 40px;
+    height:40px
+}
 
-/* ===================footer==================
-===================================
-======================
-================================================= */
+.empty{
+    height:10px;
+    width:100%;
+   
+}
+
+
+
+
+
+
+
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -454,5 +378,4 @@ ul{
 .lastanchor{
     color:#8bb7e4;
 }
-
 
