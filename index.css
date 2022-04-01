@@ -282,7 +282,7 @@ a>i{
 }
 #business>img{
     padding-top: 40px;
-    height:40px
+    
 }
 
 .empty{
@@ -379,3 +379,11 @@ ul{
     color:#8bb7e4;
 }
 
+
+
+
+#anchor{
+    color:rgb(173, 172, 172);
+    text-decoration: solid;
+    font-size: 12px;
+}
