@@ -333,6 +333,16 @@ button:hover{
     color: #787879;
 }
 
+#jazz{
+    height:40px;
+    width:120px;
+    background-color: rgb(82, 82, 238);
+    color:white;
+    border-radius: 15px;
+    border:none;
+
+}
+
 /*  five end */
   /*                      copy from iphone.html  end                              */
 
