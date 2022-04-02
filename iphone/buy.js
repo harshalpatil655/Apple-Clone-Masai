@@ -25,7 +25,7 @@ window.onload = display_default;
 
 
 function display_default(){
-    console.log('amit')
+    // console.log('amit')
     // var colour=document.querySelector("#colour").value
     const randomNumber = Math.floor(Math.random() * iphone_img.length);
     const output = iphone_img[randomNumber];
@@ -42,7 +42,7 @@ function filter_by_colour(){
             return elem.colour
         }
     })
-    console.log(output)
+    // console.log(output)
     display_data(output)
 }
 
@@ -66,5 +66,28 @@ iphone_img.map(function (elem){
     document.querySelector('#img').append(image)
 
 })
+}
+
+
+//   bag data store                  
+
+document.querySelector('button').addEventListener('click',addto_cart)
+
+var arr=[]
+function addto_cart(){
+    event.preventDefault();
+    // console.log('amit')
+    var colour=document.querySelector('#colour').value
+    // console.log(colour)
+    
+    var output=iphone_img.filter(function(elem){
+        if(elem.name==colour){
+            return elem.colour
+        }
+    })
+
+    // console.log(output)
+    arr.push(output)
+    localStorage.setItem('card_data',JSON.stringify(arr))
 }
 
