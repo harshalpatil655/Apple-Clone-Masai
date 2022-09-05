@@ -230,7 +230,7 @@ nav+div>p {
     background-color: #0077ed;
     color: #ffffff;
     border-radius: 25px;
-    border: none;
+    /* border: none; */
     /* font-size: 50px; */
 }
 

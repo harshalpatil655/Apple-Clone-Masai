@@ -186,20 +186,20 @@
             text-align: center;
         }
 
-        .your-apple-id>a{
+        .your-apple-id>a {
             text-decoration: none;
             color: blue;
         }
 
-        .antim{
+        .antim {
             /* border: 1px solid red; */
             width: 10%;
             margin: auto;
             margin-top: 2%;
         }
 
-        #button{
-            padding: 8px 0px 8px 0px ;
+        #button {
+            padding: 8px 0px 8px 0px;
             width: 100%;
             background-color: #3799e6;
             border-radius: 5px;
@@ -218,25 +218,25 @@
             <p>One Apple ID is all you need to access all Apple services.
                 You already have an Apple ID? <a href="">Find it here</a> </p>
         </div>
-          <form action="">
-        <div class="div2">
-            <input type="text" id="first-name" placeholder="first name">
-            <input type="text" id="last-name" placeholder="last name">
-        </div>
+        <form action="">
+            <div class="div2">
+                <input type="text" id="first-name" placeholder="first name">
+                <input type="text" id="last-name" placeholder="last name">
+            </div>
 
-        <p class="country">COUNTRY / REGION</p>
+            <p class="country">COUNTRY / REGION</p>
 
-        <select name="" id="country-name">
-            <option value="">india</option>
-            <option value="">america</option>
-            <option value="">australia</option>
-            <option value="">france</option>
-            <option value="">Rushia</option>
-            <option value="">ucrain</option>
-            <option value="">japan</option>
-        </select>
+            <select name="" id="country-name">
+                <option value="">india</option>
+                <option value="">america</option>
+                <option value="">australia</option>
+                <option value="">france</option>
+                <option value="">Rushia</option>
+                <option value="">ucrain</option>
+                <option value="">japan</option>
+            </select>
 
-        <input type="date" id="dob" placeholder="date of birth">
+            <input type="date" id="dob" placeholder="date of birth">
 
     </div>
 
@@ -299,41 +299,43 @@
 
     <div id="main5">
         <p class="your-apple-id">Your Apple ID information is used to allow you to sign in securely and access your
-            data. Apple records certain usage data for security, support and reporting purposes. <a href="">See how your data is
+            data. Apple records certain usage data for security, support and reporting purposes. <a href="">See how your
+                data is
                 managed.</a></p>
 
     </div>
-        
-         <div class="antim">
-             <!-- <button id="button">Continue</button> -->
-             <input type="submit">
-         </div>
-        </form>
+
+    <div class="antim">
+        <!-- <button id="button">Continue</button> -->
+        <a href="/loginpage/login.html"><input type="submit"></a>
+    </div>
+    </form>
 
 </body>
 
 </html>
 <script>
-document.querySelector("form").addEventListener("submit", signupforfun)
+    document.querySelector("form").addEventListener("submit", signupforfun)
 
-var userdata = JSON.parse(localStorage.getItem("usercrets")) || []
-function signupforfun() {
-    event.preventDefault();
+    var userdata = JSON.parse(localStorage.getItem("usercrets")) || []
+    function signupforfun() {
+        event.preventDefault();
 
-    var userobj = {
-        firstname: document.querySelector("#first-name").value,
-        lastname: document.querySelector("#last-name").value,
-        country: document.querySelector("#country-name").value,
-        dob: document.querySelector("#dob").value,
-        email: document.querySelector("#apple-id").value,
-        pasword: document.querySelector("#password").value,
-        confirmpasword: document.querySelector("#confirm-password").value,
-        mobile: document.querySelector("#mobile").value,
+        var userobj = {
+            firstname: document.querySelector("#first-name").value,
+            lastname: document.querySelector("#last-name").value,
+            country: document.querySelector("#country-name").value,
+            dob: document.querySelector("#dob").value,
+            email: document.querySelector("#apple-id").value,
+            pasword: document.querySelector("#password").value,
+            confirmpasword: document.querySelector("#confirm-password").value,
+            mobile: document.querySelector("#mobile").value,
+        }
+
+        console.log(userobj)
+        userdata.push(userobj);
+        localStorage.setItem("usercrets", JSON.stringify(userdata));
+        window.location.href = "/loginpage/login.html"
     }
-
-    console.log(userobj)
-    userdata.push(userobj);
-    localStorage.setItem("usercrets", JSON.stringify(userdata));
-}
 
 </script>

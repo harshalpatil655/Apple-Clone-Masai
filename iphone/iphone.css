@@ -97,8 +97,13 @@ nav+div>p {
  justify-content:center
 }
 
-.first_2nd_div>a{
+.first_2nd_div>.font>a{
     text-decoration: none;
+}
+
+#link{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 

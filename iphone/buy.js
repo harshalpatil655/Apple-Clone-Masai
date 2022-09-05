@@ -71,23 +71,23 @@ iphone_img.map(function (elem){
 
 //   bag data store                  
 
-document.querySelector('button').addEventListener('click',addto_cart)
+// document.querySelector('button').addEventListener('click',addto_cart)
 
-var arr=[]
-function addto_cart(){
-    event.preventDefault();
-    // console.log('amit')
-    var colour=document.querySelector('#colour').value
-    // console.log(colour)
+// var arr=JSON.parse(localStorage.getItem('card_data')) || []
+// function addto_cart(){
+//     event.preventDefault();
+//     // console.log('amit')
+//     var colour=document.querySelector('#colour').value
+//     // console.log(colour)
     
-    var output=iphone_img.filter(function(elem){
-        if(elem.name==colour){
-            return elem.colour
-        }
-    })
+//     var output=iphone_img.filter(function(elem){
+//         if(elem.name==colour){
+//             return elem.colour
+//         }
+//     })
 
-    // console.log(output)
-    arr.push(output)
-    localStorage.setItem('card_data',JSON.stringify(arr))
-}
+//     // console.log(output)
+//     arr.push(output)
+//     localStorage.setItem('card_data',JSON.stringify(arr))
+// }
 

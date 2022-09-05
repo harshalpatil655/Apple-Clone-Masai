@@ -228,16 +228,18 @@ function myfunc(){
     event.preventDefault();
 
     var entermail = document.querySelector("#id").value;
+    console.log(entermail)
 
     for(var i=0; i<readuser.length; i++) {
-        console.log(readuser[i])
+        // console.log(readuser[i])
         if(readuser[i].email == entermail){
             alert("log in Successfull");
-            window.location.href="/Apple-Clone-Masai/index.html"
+            window.location.href="/index.html"
             break;
         }
         else{
             alert("log in failed")
+            break;
         }
     }
 }
